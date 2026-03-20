@@ -989,11 +989,11 @@
 <section class="form-section" id="enroll">
   <p class="section-label">// register your interest</p>
   <h2 style="text-align:center">Enroll in a Course</h2>
-  <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;line-height:1.8;">Fill in your details — we'll reach out once your batch of <strong style="color:var(--accent4)">20 students</strong> is ready. Register now to ecure your spot.</p>
+  <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;line-height:1.8;">Fill in your details — we'll reach out once your batch of <strong style="color:var(--accent4)">50 students</strong> is ready. No payment needed now.</p>
   <div class="form-wrapper">
 
     <div style="background:rgba(255,211,42,0.05);border:1px solid rgba(255,211,42,0.2);border-radius:10px;padding:14px 20px;margin-bottom:16px;font-size:12px;color:var(--muted);line-height:1.7;">
-      ⏳ <strong style="color:var(--accent4)">Minimum 20 students per batch.</strong> Once confirmed, we'll contact you with schedule. 💬 <strong style="color:var(--accent3)">Doubt clearing sessions included</strong> in every course.
+      ⏳ <strong style="color:var(--accent4)">Minimum 50 students per batch.</strong> Once confirmed, we'll contact you with schedule and payment link. 💬 <strong style="color:var(--accent3)">Doubt clearing sessions included</strong> in every course.
     </div>
 
     <div class="form-row">
@@ -1044,14 +1044,14 @@
     <div class="form-group">
       <label>Choose Your Plan *</label>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-        <div id="plan-short" onclick="selectPlan('short')" role="button" tabindex="0" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);" style="background:var(--card);border:2px solid var(--border);border-radius:12px;padding:18px;cursor: pointer;transition:all .3s;text-align:center;">
+        <div id="plan-short" onclick="selectPlan('short')" role="button" tabindex="0" style="background:var(--card);border:2px solid var(--border);border-radius:12px;padding:18px;cursor:pointer;transition:all .3s;text-align:center;touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);">
           <div style="font-family:Syne,sans-serif;font-weight:800;font-size:15px;">Short Term</div>
           <div style="font-size:11px;color:var(--accent3);margin:4px 0;">⏱ 2 Days · Hands-On</div>
           <div style="font-size:12px;color:var(--muted);text-decoration:line-through;">₹1,000</div>
           <div style="font-family:Syne,sans-serif;font-size:24px;font-weight:800;color:var(--accent4);">₹500</div>
           <div style="font-size:10px;background:rgba(255,77,109,0.15);color:var(--accent2);padding:2px 10px;border-radius:100px;display:inline-block;margin-top:4px;">50% OFF</div>
         </div>
-        <div id="plan-long" onclick="selectPlan('long')" role="button" tabindex="0" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);" style="background:rgba(0,229,255,0.05);border:2px solid var(--accent);border-radius:12px;padding:18px;cursor: pointer;transition:all .3s;text-align:center;">
+        <div id="plan-long" onclick="selectPlan('long')" role="button" tabindex="0" style="background:rgba(0,229,255,0.05);border:2px solid var(--accent);border-radius:12px;padding:18px;cursor:pointer;transition:all .3s;text-align:center;touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);">
           <div style="font-family:Syne,sans-serif;font-weight:800;font-size:15px;">Long Term</div>
           <div style="font-size:11px;color:var(--accent3);margin:4px 0;">🗓 5 Days · In-Depth</div>
           <div style="font-size:12px;color:var(--muted);text-decoration:line-through;">₹2,500</div>
@@ -1083,16 +1083,16 @@
         <span style="color:var(--accent4);">⚡ Want to secure your spot now? Pay below to get priority in the next batch!</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:440px;margin:0 auto;">
-        <a href="https://rzp.io/rzp/jonGyCE" target="_blank" rel="noopener" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.3);display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.25);border-radius:10px;padding:16px;text-decoration:none;transition:all .3s;">
+        <button type="button" onclick="window.open('https://rzp.io/rzp/jonGyCE','_blank','noopener')" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.3);display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(0,229,255,0.06);border:1px solid rgba(0,229,255,0.25);border-radius:10px;padding:16px;width:100%;cursor:pointer;transition:all .3s;-webkit-appearance:none;">
           <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);">Short · 2 Days</span>
           <span style="font-family:Syne,sans-serif;font-size:20px;font-weight:800;color:var(--accent4);">₹500</span>
           <span style="font-size:11px;font-weight:700;color:#030a12;background:var(--accent);padding:5px 16px;border-radius:5px;">💳 Pay Now</span>
-        </a>
-        <a href="https://rzp.io/rzp/jonGyCE" target="_blank" rel="noopener" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(255,211,42,0.3);display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(255,211,42,0.06);border:1px solid rgba(255,211,42,0.25);border-radius:10px;padding:16px;text-decoration:none;transition:all .3s;">
+        </button>
+        <button type="button" onclick="window.open('https://rzp.io/rzp/jonGyCE','_blank','noopener')" style="touch-action:manipulation;-webkit-tap-highlight-color:rgba(255,211,42,0.3);display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(255,211,42,0.06);border:1px solid rgba(255,211,42,0.25);border-radius:10px;padding:16px;width:100%;cursor:pointer;transition:all .3s;-webkit-appearance:none;">
           <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);">Long · 5 Days</span>
           <span style="font-family:Syne,sans-serif;font-size:20px;font-weight:800;color:var(--accent4);">₹1,000</span>
           <span style="font-size:11px;font-weight:700;color:#030a12;background:var(--accent4);padding:5px 16px;border-radius:5px;">💳 Pay Now</span>
-        </a>
+        </button>
       </div>
       <div style="font-size:11px;color:var(--muted);margin-top:14px;">🔒 Razorpay · After payment WhatsApp screenshot to <strong style="color:var(--text);">+91 7077074416</strong></div>
     </div>
@@ -1174,11 +1174,11 @@
     <div>
       <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Contact Us</div>
       <div style="display:flex;flex-direction:column;gap:14px;">
-        <a href="tel:+917077074416" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+        <a href="tel:+917077074416" style="display:flex;align-items:center;gap:12px;text-decoration:none;touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);">
           <div style="width:34px;height:34px;background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">📞</div>
           <div><div style="font-size:10px;color:var(--muted);margin-bottom:2px;">Phone</div><div style="font-size:13px;color:var(--text);">+91 7077074416</div></div>
         </a>
-        <a href="mailto:support@click2seek.in" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+        <a href="mailto:support@click2seek.in" style="display:flex;align-items:center;gap:12px;text-decoration:none;touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,229,255,0.2);">
           <div style="width:34px;height:34px;background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">✉️</div>
           <div><div style="font-size:10px;color:var(--muted);margin-bottom:2px;">Email</div><div style="font-size:13px;color:var(--text);">support@click2seek.in</div></div>
         </a>
@@ -1250,18 +1250,97 @@
   // Enroll handler
   const SHEET_URL = "https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec";
 
-function handleEnroll(e) {
-    e.preventDefault();
-    const btn = e.target;
-    btn.textContent = '✓ Application Received! We\'ll reach out soon.';
-    btn.style.background = 'var(--accent3)';
-    btn.style.boxShadow = '0 16px 50px rgba(123,237,159,0.4)';
-    setTimeout(() => {
-      btn.textContent = '🚀 Enroll Now — It\'s Free to Apply';
-      btn.style.background = 'var(--accent)';
-      btn.style.boxShadow = '';
-    }, 4000);
+  // ── Plan selector ──────────────────────────────────────────
+  let selectedPlan = "Long Term - 5 Days - \u20B91000";
+
+  function selectPlan(p){
+    selectedPlan = (p==="short") ? "Short Term - 2 Days - \u20B9500" : "Long Term - 5 Days - \u20B91000";
+    const isShort = (p==="short");
+    const s = document.getElementById("plan-short");
+    const l = document.getElementById("plan-long");
+    if(s){ s.style.border = isShort ? "2px solid var(--accent)" : "2px solid var(--border)"; s.style.background = isShort ? "rgba(0,229,255,0.05)" : "var(--card)"; }
+    if(l){ l.style.border = !isShort ? "2px solid var(--accent)" : "2px solid var(--border)"; l.style.background = !isShort ? "rgba(0,229,255,0.05)" : "var(--card)"; }
   }
+
+  // ── Live phone validation ───────────────────────────────────
+  document.addEventListener("DOMContentLoaded", function(){
+    const phoneEl = document.getElementById("phone");
+    const hintEl  = document.getElementById("phoneHint");
+    if(phoneEl){
+      phoneEl.addEventListener("input", function(){
+        const v = this.value.replace(/\D/g,"");
+        this.value = v;
+        if(v.length===10){
+          this.style.borderColor="var(--accent3)"; this.style.boxShadow="0 0 0 3px rgba(123,237,159,0.1)";
+          if(hintEl){ hintEl.style.color="var(--accent3)"; hintEl.textContent="\u2713 Valid number"; }
+        } else if(v.length>0){
+          this.style.borderColor="var(--accent4)"; this.style.boxShadow="0 0 0 3px rgba(255,211,42,0.06)";
+          if(hintEl){ hintEl.style.color="var(--accent4)"; hintEl.textContent=v.length+"/10 digits"; }
+        } else {
+          this.style.borderColor=""; this.style.boxShadow="";
+          if(hintEl){ hintEl.style.color="var(--muted)"; hintEl.textContent="Enter exactly 10 digits"; }
+        }
+      });
+    }
+  });
+
+  // ── Form submission ─────────────────────────────────────────
+  async function handleSubmit(e){
+    e.preventDefault();
+    const btn       = document.getElementById("submitBtn");
+    const statusMsg = document.getElementById("statusMsg");
+
+    const get = function(id){ const el=document.getElementById(id); return el ? el.value.trim() : ""; };
+    const firstName = get("firstName");
+    const lastName  = get("lastName");
+    const email     = get("email");
+    const phone     = get("phone");
+    const cc        = get("countryCode") || "+91";
+    const course    = get("courseSelect");
+    const bg        = get("background");
+    const fullPhone = cc + phone;
+
+    function showError(msg){
+      statusMsg.style.cssText="display:block;background:rgba(255,77,109,0.12);color:#ff4d6d;border:1px solid rgba(255,77,109,0.3);border-radius:8px;padding:14px;text-align:center;font-size:13px;margin-top:12px;";
+      statusMsg.textContent = msg;
+      statusMsg.scrollIntoView({behavior:"smooth", block:"center"});
+    }
+
+    if(!firstName || !lastName || !email || !phone || !course){ showError("\u26A0\uFE0F Please fill in all required fields (marked *)"); return; }
+    if(!/^\d{10}$/.test(phone)){ showError("\u26A0\uFE0F Phone number must be exactly 10 digits"); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ showError("\u26A0\uFE0F Please enter a valid email address"); return; }
+
+    btn.disabled = true;
+    btn.textContent = "\u23F3 Submitting...";
+    btn.style.opacity = "0.75";
+    statusMsg.style.cssText="display:block;background:rgba(0,229,255,0.06);color:var(--accent);border:1px solid rgba(0,229,255,0.2);border-radius:8px;padding:12px;text-align:center;font-size:13px;margin-top:12px;";
+    statusMsg.textContent = "\uD83D\uDCE1 Sending your details...";
+
+    const data = {
+      timestamp : new Date().toLocaleString("en-IN",{timeZone:"Asia/Kolkata"}),
+      firstName, lastName, email, phone: fullPhone,
+      course, plan: selectedPlan, background: bg
+    };
+
+    try { await fetch(SHEET_URL, {method:"POST", mode:"no-cors", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)}); } catch(err){}
+
+    btn.textContent = "\u2713 Registered!";
+    btn.style.background = "var(--accent3)";
+    btn.style.opacity = "1";
+    statusMsg.style.display = "none";
+
+    const byId = function(id){ return document.getElementById(id); };
+    if(byId("confirmEmail"))  byId("confirmEmail").textContent  = email;
+    if(byId("confirmPhone"))  byId("confirmPhone").textContent  = fullPhone;
+    if(byId("confirmCourse")) byId("confirmCourse").textContent = course;
+    if(byId("confirmPlan"))   byId("confirmPlan").textContent   = selectedPlan;
+
+    const box = byId("successBox");
+    if(box){ box.style.display="block"; setTimeout(function(){ box.scrollIntoView({behavior:"smooth",block:"center"}); }, 150); }
+  }
+
+  // Alias
+  function handleEnroll(e){ handleSubmit(e); }
 
   // Scroll-based reveal
   const observer = new IntersectionObserver((entries) => {
