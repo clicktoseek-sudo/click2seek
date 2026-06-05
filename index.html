@@ -29,14 +29,12 @@
 html{scroll-behavior:smooth;}
 body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;}
 
-/* UTILITY */
 .serif{font-family:'Playfair Display',serif;}
 .mono{font-family:'DM Mono',monospace;}
 .teal{color:var(--teal);}
 .muted{color:var(--muted);}
 .tag{display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:16px;}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,252,250,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border2);padding:0 60px;}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1280px;margin:0 auto;}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
@@ -50,7 +48,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,252,250,
 .nav-cta{background:var(--teal)!important;color:#fff!important;padding:10px 24px;border-radius:6px;font-weight:600!important;transition:background .2s!important;}
 .nav-cta:hover{background:var(--ocean)!important;}
 
-/* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 60px 80px;max-width:1280px;margin:0 auto;gap:60px;}
 .hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:28px;}
 .eyebrow-dot{width:8px;height:8px;background:var(--teal);border-radius:50%;animation:breathe 3s ease-in-out infinite;}
@@ -71,7 +68,6 @@ h1 em{font-style:italic;color:var(--teal);}
 .stat-n{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;color:var(--teal);line-height:1;}
 .stat-l{font-size:12px;color:var(--muted);margin-top:5px;letter-spacing:.5px;}
 
-/* HERO VISUAL */
 .hero-visual{position:relative;}
 .hero-img-wrap{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(135deg,#0B3D5C 0%,#0E6E62 60%,#2D5A27 100%);}
 .hero-img-wrap canvas{position:absolute;inset:0;width:100%;height:100%;}
@@ -83,14 +79,12 @@ h1 em{font-style:italic;color:var(--teal);}
 .confidence-fill{height:100%;background:var(--teal);border-radius:100px;animation:grow 2s ease both;}
 @keyframes grow{from{width:0;}to{width:94%;}}
 
-/* SECTION BASE */
 section{padding:100px 60px;max-width:1280px;margin:0 auto;}
 .section-full{padding:100px 60px;background:var(--cream);}
 .section-full-inner{max-width:1280px;margin:0 auto;}
 h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:16px;}
 .section-intro{font-size:17px;color:var(--ink2);max-width:560px;line-height:1.8;margin-bottom:56px;}
 
-/* PRODUCTS */
 .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
 .product-card{background:#fff;border:1px solid var(--border2);border-radius:16px;overflow:hidden;transition:all .3s;cursor:default;}
 .product-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(14,110,98,0.1);border-color:rgba(14,110,98,0.2);}
@@ -102,7 +96,6 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .product-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;}
 .ptag{font-size:11px;padding:4px 10px;border-radius:100px;background:var(--teal-light);color:var(--teal);font-weight:600;}
 
-/* DEPLOYMENT BANNER */
 .deploy-section{padding:80px 60px;background:var(--ocean);position:relative;overflow:hidden;}
 .deploy-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(26,148,133,0.15) 0%,transparent 70%);}
 .deploy-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1;}
@@ -116,7 +109,6 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .case-sub{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;}
 .case-badge{display:inline-block;font-size:10px;padding:3px 8px;background:rgba(26,148,133,0.4);border-radius:100px;color:rgba(208,237,232,0.9);margin-top:6px;letter-spacing:.5px;}
 
-/* HOW IT WORKS */
 .how-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:20px;}
 .how-steps{display:flex;flex-direction:column;gap:0;}
 .how-step{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--faint);position:relative;}
@@ -126,7 +118,6 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .step-desc{font-size:14px;color:var(--ink2);line-height:1.7;}
 .how-visual{background:var(--cream);border-radius:20px;padding:32px;border:1px solid var(--faint);}
 
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
 .about-text p{font-size:15px;color:var(--ink2);line-height:1.9;margin-bottom:16px;}
 .about-feat{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px;}
@@ -137,7 +128,6 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .feat-desc{font-size:12px;color:var(--muted);line-height:1.6;}
 .about-img{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#0E6E62,#0B3D5C);aspect-ratio:1;display:flex;align-items:center;justify-content:center;}
 
-/* CONTACT */
 .contact-section{padding:100px 60px;background:var(--cream);}
 .contact-inner{max-width:700px;margin:0 auto;text-align:center;}
 .contact-box{background:#fff;border-radius:20px;padding:48px;border:1px solid var(--faint);margin-top:40px;text-align:left;}
@@ -150,7 +140,6 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .form-submit{width:100%;padding:16px;background:var(--teal);color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:600;cursor:pointer;transition:all .25s;margin-top:8px;}
 .form-submit:hover{background:var(--ocean);transform:translateY(-2px);}
 
-/* FOOTER */
 footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;}
 .footer-inner{max-width:1280px;margin:0 auto;}
 .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.1);}
@@ -167,11 +156,143 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
 .startup-text{font-size:11px;line-height:1.5;color:rgba(255,255,255,0.5);}
 .startup-text strong{display:block;color:rgba(255,255,255,0.85);font-size:12px;}
 
-/* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 
-/* RESPONSIVE */
+/* ── CHATBOT ─────────────────────────── */
+#c2s-bot-toggle{
+  position:fixed;bottom:28px;right:28px;z-index:9999;
+  width:60px;height:60px;border-radius:50%;
+  background:var(--teal);border:none;cursor:pointer;
+  box-shadow:0 8px 32px rgba(14,110,98,0.4);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .25s;
+}
+#c2s-bot-toggle:hover{background:var(--ocean);transform:scale(1.08);}
+#c2s-bot-toggle svg{width:26px;height:26px;fill:none;stroke:#fff;stroke-width:2;transition:opacity .2s;}
+#c2s-bot-toggle .ico-chat{opacity:1;}
+#c2s-bot-toggle .ico-close{position:absolute;opacity:0;}
+#c2s-bot-toggle.open .ico-chat{opacity:0;}
+#c2s-bot-toggle.open .ico-close{opacity:1;}
+
+.bot-pulse{
+  position:absolute;top:-4px;right:-4px;width:16px;height:16px;
+  background:#22c97f;border-radius:50%;border:2px solid var(--paper);
+  animation:bpulse 2.4s ease-in-out infinite;
+}
+@keyframes bpulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.35);opacity:.7;}}
+
+#c2s-bot-panel{
+  position:fixed;bottom:104px;right:28px;z-index:9998;
+  width:380px;max-height:580px;
+  background:var(--paper);border-radius:20px;
+  border:1px solid var(--border);
+  box-shadow:0 24px 64px rgba(26,24,20,0.18);
+  display:flex;flex-direction:column;
+  transform:scale(0.92) translateY(20px);
+  transform-origin:bottom right;
+  opacity:0;pointer-events:none;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);
+  overflow:hidden;
+}
+#c2s-bot-panel.open{opacity:1;pointer-events:all;transform:scale(1) translateY(0);}
+
+.bot-header{
+  background:var(--teal);padding:18px 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.bot-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.bot-avatar svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.8;}
+.bot-hname{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;}
+.bot-hstatus{font-size:11px;color:rgba(255,255,255,0.7);margin-top:2px;}
+.bot-header-close{margin-left:auto;background:none;border:none;cursor:pointer;padding:6px;border-radius:6px;color:rgba(255,255,255,0.7);transition:all .2s;display:flex;align-items:center;}
+.bot-header-close:hover{background:rgba(255,255,255,0.1);color:#fff;}
+.bot-header-close svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;}
+
+.bot-messages{
+  flex:1;overflow-y:auto;padding:20px 16px 12px;
+  display:flex;flex-direction:column;gap:12px;
+  scroll-behavior:smooth;
+}
+.bot-messages::-webkit-scrollbar{width:4px;}
+.bot-messages::-webkit-scrollbar-track{background:transparent;}
+.bot-messages::-webkit-scrollbar-thumb{background:var(--faint);border-radius:4px;}
+
+.bot-msg{display:flex;gap:8px;align-items:flex-end;max-width:100%;}
+.bot-msg.bot{align-self:flex-start;}
+.bot-msg.user{align-self:flex-end;flex-direction:row-reverse;}
+
+.bot-bubble-wrap{display:flex;flex-direction:column;gap:4px;max-width:82%;}
+.bot-msg.user .bot-bubble-wrap{align-items:flex-end;}
+
+.bot-bubble{
+  padding:10px 14px;border-radius:16px;font-size:13.5px;line-height:1.6;
+}
+.bot-msg.bot .bot-bubble{
+  background:var(--cream);color:var(--ink);border:1px solid var(--faint);
+  border-bottom-left-radius:4px;
+}
+.bot-msg.user .bot-bubble{
+  background:var(--teal);color:#fff;
+  border-bottom-right-radius:4px;
+}
+.bot-mini-avatar{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  background:var(--teal-light);
+  display:flex;align-items:center;justify-content:center;
+}
+.bot-mini-avatar svg{width:14px;height:14px;fill:none;stroke:var(--teal);stroke-width:2;}
+
+.bot-chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 12px;}
+.bot-chip{
+  padding:7px 13px;border-radius:100px;font-size:12px;font-weight:600;
+  background:var(--teal-light);color:var(--teal);border:1px solid rgba(14,110,98,0.15);
+  cursor:pointer;transition:all .2s;
+}
+.bot-chip:hover{background:var(--teal);color:#fff;}
+
+.bot-input-row{
+  padding:12px 14px;border-top:1px solid var(--faint);
+  display:flex;align-items:center;gap:8px;
+}
+.bot-input{
+  flex:1;background:var(--cream);border:1px solid var(--faint);border-radius:10px;
+  padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--ink);
+  outline:none;transition:border-color .2s;resize:none;
+  max-height:80px;line-height:1.5;
+}
+.bot-input:focus{border-color:var(--teal);}
+.bot-send{
+  width:38px;height:38px;border-radius:9px;background:var(--teal);border:none;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  transition:all .2s;flex-shrink:0;
+}
+.bot-send:hover{background:var(--ocean);}
+.bot-send svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;}
+.bot-send:disabled{background:var(--faint);cursor:not-allowed;}
+.bot-send:disabled svg{stroke:var(--muted);}
+
+.bot-typing{display:flex;gap:4px;align-items:center;padding:10px 14px;}
+.bot-typing span{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:btype .9s ease-in-out infinite;}
+.bot-typing span:nth-child(2){animation-delay:.15s;}
+.bot-typing span:nth-child(3){animation-delay:.3s;}
+@keyframes btype{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-6px);}}
+
+.bot-success{
+  padding:20px;text-align:center;
+}
+.bot-success-icon{
+  width:56px;height:56px;background:var(--teal-light);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 12px;
+}
+.bot-success-icon svg{width:28px;height:28px;fill:none;stroke:var(--teal);stroke-width:2;}
+.bot-success-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:6px;}
+.bot-success-sub{font-size:13px;color:var(--muted);line-height:1.6;}
+
 @media(max-width:900px){
   nav{padding:0 24px;}
   .nav-links{display:none;}
@@ -190,6 +311,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   .deploy-section{padding:60px 24px;}
   .contact-section{padding:60px 24px;}
   footer{padding:48px 24px 28px;}
+  #c2s-bot-panel{width:calc(100vw - 32px);right:16px;bottom:92px;}
 }
 </style>
 </head>
@@ -228,25 +350,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <a href="#deployment" class="btn btn-outline">Our Deployments</a>
     </div>
     <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-n">4+</div>
-        <div class="stat-l">AI Products</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">2</div>
-        <div class="stat-l">Field Deployments</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">94%</div>
-        <div class="stat-l">Detection Accuracy</div>
-      </div>
-      <div class="stat" style="border:none;">
-        <div class="stat-n">2020</div>
-        <div class="stat-l">Founded</div>
-      </div>
+      <div class="stat"><div class="stat-n">4+</div><div class="stat-l">AI Products</div></div>
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Field Deployments</div></div>
+      <div class="stat"><div class="stat-n">94%</div><div class="stat-l">Detection Accuracy</div></div>
+      <div class="stat" style="border:none;"><div class="stat-n">2020</div><div class="stat-l">Founded</div></div>
     </div>
   </div>
-
   <div class="hero-visual">
     <div class="hero-img-wrap" style="height:520px;">
       <canvas id="heroCanvas"></canvas>
@@ -256,7 +365,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
         </div>
         <div>
           <div class="badge-title">MarineVue AI · Live Detection</div>
-          <div class="badge-sub" style="color:var(--muted);">Indian Mackerel · Sardinella longiceps · Confidence</div>
+          <div class="badge-sub">Indian Mackerel · Sardinella longiceps · Confidence</div>
           <div class="confidence-bar"><div class="confidence-fill" style="width:94%;"></div></div>
         </div>
         <div style="margin-left:auto;font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--teal);">94%</div>
@@ -265,15 +374,11 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   </div>
 </div>
 
-<!-- THIN MARQUEE -->
+<!-- MARQUEE -->
 <div style="background:var(--teal);padding:16px 0;overflow:hidden;border-top:1px solid rgba(255,255,255,0.1);">
-  <div id="marquee" style="display:flex;gap:0;animation:marq 28s linear infinite;width:max-content;">
-    <!-- duplicated for loop -->
-  </div>
+  <div id="marquee" style="display:flex;gap:0;animation:marq 28s linear infinite;width:max-content;"></div>
 </div>
-<style>
-@keyframes marq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-</style>
+<style>@keyframes marq{from{transform:translateX(0);}to{transform:translateX(-50%);}}</style>
 
 <!-- PRODUCTS -->
 <section id="products">
@@ -285,7 +390,6 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
     <p style="font-size:15px;color:var(--ink2);max-width:380px;line-height:1.8;margin-top:40px;">Purpose-built models trained on rare wildlife and marine datasets — deployable on edge hardware in remote environments.</p>
   </div>
   <div class="products-grid">
-
     <div class="product-card reveal">
       <div class="product-img" style="background:linear-gradient(135deg,#0B3D5C 0%,#0E6E62 100%);">
         <canvas id="p1canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -294,16 +398,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Underwater Vision</div>
         <div class="product-name serif">MarineVue AI</div>
-        <div class="product-desc">Real-time underwater species identification and population census. Trained on 80+ marine species found in the Indian Ocean and Bay of Bengal. Runs on submerged edge cameras with satellite sync.</div>
-        <div class="product-tags">
-          <span class="ptag">Species ID</span>
-          <span class="ptag">Population Count</span>
-          <span class="ptag">Coral Health</span>
-          <span class="ptag">Edge Deploy</span>
-        </div>
+        <div class="product-desc">Real-time underwater species identification and population census. Trained on 80+ marine species found in the Indian Ocean and Bay of Bengal.</div>
+        <div class="product-tags"><span class="ptag">Species ID</span><span class="ptag">Population Count</span><span class="ptag">Coral Health</span><span class="ptag">Edge Deploy</span></div>
       </div>
     </div>
-
     <div class="product-card reveal" style="transition-delay:.1s;">
       <div class="product-img" style="background:linear-gradient(135deg,#2D5A27 0%,#0E6E62 100%);">
         <canvas id="p2canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -312,16 +410,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Forest & Sanctuary</div>
         <div class="product-name serif">WildLens Sentinel</div>
-        <div class="product-desc">Autonomous wildlife monitoring via camera-trap AI. Detects and classifies animals, flags human encroachment, and tracks individual animals using biometric pattern recognition — day and night.</div>
-        <div class="product-tags">
-          <span class="ptag">Species Classification</span>
-          <span class="ptag">Poaching Alert</span>
-          <span class="ptag">Night Vision</span>
-          <span class="ptag">Individual ID</span>
-        </div>
+        <div class="product-desc">Autonomous wildlife monitoring via camera-trap AI. Detects and classifies animals, flags human encroachment, and tracks individuals day and night.</div>
+        <div class="product-tags"><span class="ptag">Species Classification</span><span class="ptag">Poaching Alert</span><span class="ptag">Night Vision</span></div>
       </div>
     </div>
-
     <div class="product-card reveal" style="transition-delay:.2s;">
       <div class="product-img" style="background:linear-gradient(135deg,#1A3A4F 0%,#2D5A27 100%);">
         <canvas id="p3canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -330,16 +422,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Drone Intelligence</div>
         <div class="product-name serif">AerioScan Vision</div>
-        <div class="product-desc">Drone-mounted vision AI for aerial wildlife surveys. Counts herds, maps migration corridors, and detects illegal activity across thousands of hectares in a single flight — with centimetre-level accuracy.</div>
-        <div class="product-tags">
-          <span class="ptag">Herd Counting</span>
-          <span class="ptag">Migration Mapping</span>
-          <span class="ptag">Thermal Overlay</span>
-          <span class="ptag">UAV Native</span>
-        </div>
+        <div class="product-desc">Drone-mounted vision AI for aerial wildlife surveys. Counts herds, maps migration corridors, and detects illegal activity across thousands of hectares.</div>
+        <div class="product-tags"><span class="ptag">Herd Counting</span><span class="ptag">Migration Mapping</span><span class="ptag">UAV Native</span></div>
       </div>
     </div>
-
     <div class="product-card reveal" style="transition-delay:.3s;">
       <div class="product-img" style="background:linear-gradient(135deg,#0B3D5C 0%,#2D5A27 60%,#C8A96E 100%);">
         <canvas id="p4canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -348,15 +434,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Ethology AI</div>
         <div class="product-name serif">EthoTrack Pro</div>
-        <div class="product-desc">Long-duration behavioural analysis for captive and wild animal research. Automatically logs feeding, social interaction, stress indicators, and reproductive behaviour from standard camera feeds.</div>
-        <div class="product-tags">
-          <span class="ptag">Behaviour Logging</span>
-          <span class="ptag">Stress Detection</span>
-          <span class="ptag">Research Export</span>
-        </div>
+        <div class="product-desc">Long-duration behavioural analysis for captive and wild animal research. Automatically logs feeding, social interaction, and stress indicators.</div>
+        <div class="product-tags"><span class="ptag">Behaviour Logging</span><span class="ptag">Stress Detection</span><span class="ptag">Research Export</span></div>
       </div>
     </div>
-
     <div class="product-card reveal" style="transition-delay:.35s;">
       <div class="product-img" style="background:linear-gradient(135deg,#1A9485 0%,#0B3D5C 100%);">
         <canvas id="p5canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -365,15 +446,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Bioacoustics</div>
         <div class="product-name serif">SonarSpec Analyser</div>
-        <div class="product-desc">Combines hydrophone audio with visual feeds to create a multimodal AI for cetacean and fish school detection in coastal and deep-sea zones. Identifies species from vocalisations alone when visibility is zero.</div>
-        <div class="product-tags">
-          <span class="ptag">Cetacean Detection</span>
-          <span class="ptag">Multimodal AI</span>
-          <span class="ptag">Hydrophone Sync</span>
-        </div>
+        <div class="product-desc">Multimodal AI for cetacean and fish school detection in coastal and deep-sea zones. Identifies species from vocalisations alone when visibility is zero.</div>
+        <div class="product-tags"><span class="ptag">Cetacean Detection</span><span class="ptag">Multimodal AI</span><span class="ptag">Hydrophone Sync</span></div>
       </div>
     </div>
-
     <div class="product-card reveal" style="transition-delay:.4s;">
       <div class="product-img" style="background:linear-gradient(135deg,#3D3830 0%,#0E6E62 100%);">
         <canvas id="p6canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
@@ -382,16 +458,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div class="product-body">
         <div class="product-category">Research Platform</div>
         <div class="product-name serif">BiomeCloud Dashboard</div>
-        <div class="product-desc">Unified web platform that aggregates data from all Click2Seek products. Provides time-series biodiversity analytics, exportable CSV/API, species abundance heatmaps, and IUCN Red List integration.</div>
-        <div class="product-tags">
-          <span class="ptag">Multi-source Fusion</span>
-          <span class="ptag">Biodiversity Index</span>
-          <span class="ptag">IUCN Integration</span>
-          <span class="ptag">Open API</span>
-        </div>
+        <div class="product-desc">Unified web platform aggregating all Click2Seek products. Biodiversity analytics, exportable CSV/API, species abundance heatmaps, and IUCN Red List integration.</div>
+        <div class="product-tags"><span class="ptag">Biodiversity Index</span><span class="ptag">IUCN Integration</span><span class="ptag">Open API</span></div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -411,34 +481,30 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       </div>
     </div>
     <div class="deploy-cases">
-
       <div class="deploy-case">
         <div class="case-icon">🐅</div>
         <div>
           <div class="case-title">Karnataka Wildlife Sanctuaries — Ongoing Intelligence Trial</div>
-          <div class="case-sub">WildLens Sentinel and AerioScan Vision are currently undergoing an active intelligence evaluation across reserve forest belts in Karnataka. Camera-trap networks are monitoring tiger corridors, elephant movement patterns, and ungulate populations. Data is being co-analysed with state forest department researchers.</div>
+          <div class="case-sub">WildLens Sentinel and AerioScan Vision are currently undergoing an active intelligence evaluation across reserve forest belts in Karnataka. Camera-trap networks are monitoring tiger corridors and elephant movement patterns.</div>
           <span class="case-badge">🔵 Active · Karnataka, India</span>
         </div>
       </div>
-
       <div class="deploy-case">
         <div class="case-icon">🦚</div>
         <div>
           <div class="case-title">Odisha Wildlife Sanctuaries — Completed Field Trial</div>
-          <div class="case-sub">Our first large-scale field validation was conducted across wildlife sanctuaries in Odisha. EthoTrack Pro and WildLens Sentinel logged over 14,000 species detection events across 90 days. The trial confirmed 94% classification accuracy for 28 local species, including the Indian Roller and Olive Ridley Turtle.</div>
+          <div class="case-sub">EthoTrack Pro and WildLens Sentinel logged over 14,000 species detection events across 90 days. The trial confirmed 94% classification accuracy for 28 local species, including the Indian Roller and Olive Ridley Turtle.</div>
           <span class="case-badge">✅ Completed · Odisha, India</span>
         </div>
       </div>
-
       <div class="deploy-case">
         <div class="case-icon">🐟</div>
         <div>
           <div class="case-title">Bay of Bengal Coastal Fish Population Study</div>
-          <div class="case-sub">MarineVue AI was deployed on fixed underwater frames at three coastal transects in collaboration with a marine biology research group. The system identified 61 species and provided continuous stock estimation data over a 60-day period — previously achievable only by trained dive teams.</div>
+          <div class="case-sub">MarineVue AI was deployed on fixed underwater frames at three coastal transects. The system identified 61 species and provided continuous stock estimation data over a 60-day period.</div>
           <span class="case-badge">✅ Completed · Bay of Bengal</span>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -449,39 +515,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   <h2>From raw footage<br>to research insight</h2>
   <div class="how-grid">
     <div class="how-steps">
-      <div class="how-step">
-        <div class="step-num">01</div>
-        <div>
-          <div class="step-title">Edge capture & preprocessing</div>
-          <div class="step-desc">Camera traps, underwater housings, and drone gimbals stream or store footage. Onboard microcontrollers apply denoising, colour correction, and frame selection before processing — eliminating poor-quality inputs upstream.</div>
-        </div>
-      </div>
-      <div class="how-step">
-        <div class="step-num">02</div>
-        <div>
-          <div class="step-title">Domain-tuned neural inference</div>
-          <div class="step-desc">Our vision models are fine-tuned on carefully curated Indian subcontinent wildlife datasets — not generic ImageNet weights. This gives dramatically better performance in local habitat conditions, lighting, and species distribution.</div>
-        </div>
-      </div>
-      <div class="how-step">
-        <div class="step-num">03</div>
-        <div>
-          <div class="step-title">Confidence scoring & audit trail</div>
-          <div class="step-desc">Every detection carries a confidence value and bounding metadata. Low-confidence detections are flagged for human review, ensuring research-grade reliability and a fully auditable data pipeline for publication.</div>
-        </div>
-      </div>
-      <div class="how-step">
-        <div class="step-num">04</div>
-        <div>
-          <div class="step-title">BiomeCloud aggregation & analysis</div>
-          <div class="step-desc">Structured data flows into BiomeCloud where it is time-indexed, cross-referenced against habitat maps, and surfaced as biodiversity metrics, population trends, and exportable datasets for academic use.</div>
-        </div>
-      </div>
+      <div class="how-step"><div class="step-num">01</div><div><div class="step-title">Edge capture & preprocessing</div><div class="step-desc">Camera traps, underwater housings, and drone gimbals stream or store footage. Onboard microcontrollers apply denoising, colour correction, and frame selection before processing.</div></div></div>
+      <div class="how-step"><div class="step-num">02</div><div><div class="step-title">Domain-tuned neural inference</div><div class="step-desc">Our vision models are fine-tuned on carefully curated Indian subcontinent wildlife datasets — not generic ImageNet weights. Dramatically better performance in local habitat conditions.</div></div></div>
+      <div class="how-step"><div class="step-num">03</div><div><div class="step-title">Confidence scoring & audit trail</div><div class="step-desc">Every detection carries a confidence value and bounding metadata. Low-confidence detections are flagged for human review, ensuring research-grade reliability.</div></div></div>
+      <div class="how-step"><div class="step-num">04</div><div><div class="step-title">BiomeCloud aggregation & analysis</div><div class="step-desc">Structured data flows into BiomeCloud where it is time-indexed, cross-referenced against habitat maps, and surfaced as biodiversity metrics and exportable datasets.</div></div></div>
     </div>
-
-    <div class="how-visual">
-      <canvas id="pipelineCanvas" style="width:100%;height:320px;display:block;"></canvas>
-    </div>
+    <div class="how-visual"><canvas id="pipelineCanvas" style="width:100%;height:320px;display:block;"></canvas></div>
   </div>
 </section>
 
@@ -496,26 +535,10 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
         <p>Our multidisciplinary team combines expertise in computer vision, embedded systems, marine biology, and wildlife ecology. We don't build generic AI — every model we release has been trained and validated in the specific environmental contexts where it will operate.</p>
         <p>We collaborate with forest departments, universities, and conservation NGOs to ensure our tools are rigorous, interpretable, and genuinely useful to the people working to protect India's extraordinary natural heritage.</p>
         <div class="about-feat">
-          <div class="feat-item">
-            <div class="feat-icon">🔬</div>
-            <div class="feat-title">Research-grade accuracy</div>
-            <div class="feat-desc">Models meet the bar for peer-reviewed publication use.</div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">🌏</div>
-            <div class="feat-title">India-first datasets</div>
-            <div class="feat-desc">Trained on local species, habitats, and light conditions.</div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">⚡</div>
-            <div class="feat-title">Edge-first design</div>
-            <div class="feat-desc">Operates with no internet in the deepest forest.</div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-icon">📊</div>
-            <div class="feat-title">Open data philosophy</div>
-            <div class="feat-desc">Aggregated findings shared with the conservation community.</div>
-          </div>
+          <div class="feat-item"><div class="feat-icon">🔬</div><div class="feat-title">Research-grade accuracy</div><div class="feat-desc">Models meet the bar for peer-reviewed publication use.</div></div>
+          <div class="feat-item"><div class="feat-icon">🌏</div><div class="feat-title">India-first datasets</div><div class="feat-desc">Trained on local species, habitats, and light conditions.</div></div>
+          <div class="feat-item"><div class="feat-icon">⚡</div><div class="feat-title">Edge-first design</div><div class="feat-desc">Operates with no internet in the deepest forest.</div></div>
+          <div class="feat-item"><div class="feat-icon">📊</div><div class="feat-title">Open data philosophy</div><div class="feat-desc">Aggregated findings shared with the conservation community.</div></div>
         </div>
       </div>
       <div class="about-img">
@@ -535,26 +558,14 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   <div class="contact-inner">
     <span class="tag" style="display:block;text-align:center;">Get in Touch</span>
     <h2 style="text-align:center;">Work with us</h2>
-    <p style="text-align:center;color:var(--ink2);font-size:15px;margin-top:12px;">Whether you're a researcher, conservationist, forest department, or university — we'd love to understand your monitoring challenge and see how Click2Seek can help.</p>
+    <p style="text-align:center;color:var(--ink2);font-size:15px;margin-top:12px;">Whether you're a researcher, conservationist, forest department, or university — we'd love to understand your monitoring challenge.</p>
     <div class="contact-box">
       <div class="form-row">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" placeholder="Dr. Meera" id="fname">
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" placeholder="Nair" id="lname">
-        </div>
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="Dr. Meera" id="fname"></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Nair" id="lname"></div>
       </div>
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" placeholder="you@institution.in" id="cemail">
-      </div>
-      <div class="form-group">
-        <label>Organisation / Institution</label>
-        <input type="text" placeholder="Wildlife Institute of India" id="org">
-      </div>
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@institution.in" id="cemail"></div>
+      <div class="form-group"><label>Organisation / Institution</label><input type="text" placeholder="Wildlife Institute of India" id="org"></div>
       <div class="form-group">
         <label>Area of Interest</label>
         <select id="interest">
@@ -568,16 +579,11 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
           <option>Custom / Other</option>
         </select>
       </div>
-      <div class="form-group">
-        <label>Tell us about your project</label>
-        <textarea placeholder="Briefly describe your monitoring goals, study area, and timeline..." id="msg"></textarea>
-      </div>
+      <div class="form-group"><label>Tell us about your project</label><textarea placeholder="Briefly describe your monitoring goals, study area, and timeline..." id="msg"></textarea></div>
       <button class="form-submit" onclick="handleContact()">Send Enquiry →</button>
       <div id="cstatus" style="display:none;margin-top:14px;padding:12px 16px;border-radius:8px;font-size:14px;text-align:center;"></div>
     </div>
-    <div style="text-align:center;margin-top:28px;color:var(--muted);font-size:13px;">
-      Or write directly to <a href="mailto:support@click2seek.in" style="color:var(--teal);font-weight:600;">support@click2seek.in</a>
-    </div>
+    <div style="text-align:center;margin-top:28px;color:var(--muted);font-size:13px;">Or write directly to <a href="mailto:support@click2seek.in" style="color:var(--teal);font-weight:600;">support@click2seek.in</a></div>
   </div>
 </div>
 
@@ -588,7 +594,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <div>
         <div class="footer-brand">Click<span>2</span>Seek</div>
         <div class="footer-desc">Visual intelligence for marine biology, wildlife research, and ecological conservation. Based in Bengaluru, operating across India. Founded 2020.</div>
-        <div style="margin-top:20px;display:flex;align-items:center;gap:10px;">
+        <div style="margin-top:20px;">
           <a href="mailto:support@click2seek.in" style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.6);text-decoration:none;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#7de0d4'" onmouseout="this.style.color='rgba(255,255,255,0.6)'">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 7 12 13 22 7"/></svg>
             support@click2seek.in
@@ -631,236 +637,350 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   </div>
 </footer>
 
+<!-- ══════════════════════════════════════
+     CHATBOT WIDGET
+══════════════════════════════════════ -->
+<button id="c2s-bot-toggle" aria-label="Chat with us" title="Chat with Click2Seek">
+  <div class="bot-pulse"></div>
+  <!-- chat icon -->
+  <svg class="ico-chat" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <!-- close icon -->
+  <svg class="ico-close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<div id="c2s-bot-panel" role="dialog" aria-label="Click2Seek enquiry assistant">
+  <div class="bot-header">
+    <div class="bot-avatar">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>
+    </div>
+    <div>
+      <div class="bot-hname">C2S Assistant</div>
+      <div class="bot-hstatus">● Online · Ask me anything</div>
+    </div>
+    <button class="bot-header-close" onclick="toggleBot()" aria-label="Close chat">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="bot-messages" id="botMessages"></div>
+  <div class="bot-chips" id="botChips"></div>
+
+  <div class="bot-input-row" id="botInputRow">
+    <textarea class="bot-input" id="botInput" placeholder="Type your message…" rows="1"
+      onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendUserMsg();}"
+      oninput="this.style.height='auto';this.style.height=Math.min(this.scrollHeight,80)+'px'"></textarea>
+    <button class="bot-send" id="botSend" onclick="sendUserMsg()" aria-label="Send">
+      <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13" stroke-linecap="round"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
 <script>
-/* ── MARQUEE ─────────────────────────── */
+/* ════════════════════════════════════════
+   CHATBOT LOGIC
+════════════════════════════════════════ */
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec';
+
+const FLOW=[
+  {
+    id:'welcome',
+    bot:"👋 Hi! I'm the Click2Seek assistant. I'd love to learn about your research and see how we can help.\n\nFirst — what's your name?",
+    type:'text', key:'name', placeholder:'e.g. Dr. Meera Nair',
+    next:'email'
+  },
+  {
+    id:'email',
+    bot:(d)=>`Great to meet you, ${d.name.split(' ')[0]}! What email address should we reach you at?`,
+    type:'text', key:'email', placeholder:'you@institution.in',
+    validate:(v)=>/\S+@\S+\.\S+/.test(v)||'Please enter a valid email address.',
+    next:'org'
+  },
+  {
+    id:'org',
+    bot:'Which organisation or institution are you from?',
+    type:'text', key:'org', placeholder:'e.g. Wildlife Institute of India',
+    next:'area'
+  },
+  {
+    id:'area',
+    bot:'What area of work best describes your interest in Click2Seek?',
+    type:'chips',
+    key:'area',
+    chips:['Marine Biology','Wildlife Monitoring','Drone Surveys','Behavioural Ecology','Bioacoustics','Biodiversity Analytics','Something else'],
+    next:'location'
+  },
+  {
+    id:'location',
+    bot:(d)=>`Wonderful! Where is your study area or field site located?`,
+    type:'text', key:'location', placeholder:'e.g. Sundarbans, West Bengal',
+    next:'challenge'
+  },
+  {
+    id:'challenge',
+    bot:'In a few words — what is the core monitoring challenge you are trying to solve?',
+    type:'text', key:'challenge', placeholder:'e.g. Track tiger corridor use across 3 reserves',
+    next:'timeline'
+  },
+  {
+    id:'timeline',
+    bot:'What is your approximate project timeline or deployment target?',
+    type:'chips',
+    key:'timeline',
+    chips:['Within 3 months','3–6 months','6–12 months','Just exploring','Ongoing / Permanent'],
+    next:'submit'
+  }
+];
+
+let botData={};
+let currentStep=0;
+let botOpen=false;
+let isTyping=false;
+
+function toggleBot(){
+  botOpen=!botOpen;
+  document.getElementById('c2s-bot-toggle').classList.toggle('open',botOpen);
+  document.getElementById('c2s-bot-panel').classList.toggle('open',botOpen);
+  if(botOpen&&currentStep===0&&document.getElementById('botMessages').children.length===0){
+    setTimeout(()=>showStep(0),300);
+  }
+}
+document.getElementById('c2s-bot-toggle').addEventListener('click',toggleBot);
+
+function addMsg(text,role){
+  const wrap=document.getElementById('botMessages');
+  const div=document.createElement('div');
+  div.className=`bot-msg ${role}`;
+  const bw=document.createElement('div');
+  bw.className='bot-bubble-wrap';
+  const bub=document.createElement('div');
+  bub.className='bot-bubble';
+  bub.style.whiteSpace='pre-wrap';
+  bub.textContent=text;
+  bw.appendChild(bub);
+  if(role==='bot'){
+    const av=document.createElement('div');
+    av.className='bot-mini-avatar';
+    av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;
+    div.appendChild(av);
+  }
+  div.appendChild(bw);
+  wrap.appendChild(div);
+  wrap.scrollTop=wrap.scrollHeight;
+  return bub;
+}
+
+function showTyping(cb){
+  const wrap=document.getElementById('botMessages');
+  const div=document.createElement('div');
+  div.className='bot-msg bot';div.id='botTypingRow';
+  const av=document.createElement('div');av.className='bot-mini-avatar';
+  av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;
+  const bw=document.createElement('div');bw.className='bot-bubble-wrap';
+  const bub=document.createElement('div');bub.className='bot-bubble';bub.style.padding='0';
+  const ty=document.createElement('div');ty.className='bot-typing';
+  ty.innerHTML='<span></span><span></span><span></span>';
+  bub.appendChild(ty);bw.appendChild(bub);div.appendChild(av);div.appendChild(bw);
+  wrap.appendChild(div);wrap.scrollTop=wrap.scrollHeight;
+  isTyping=true;
+  setInputEnabled(false);
+  setTimeout(()=>{
+    const el=document.getElementById('botTypingRow');
+    if(el)el.remove();
+    isTyping=false;
+    cb();
+  },900+Math.random()*500);
+}
+
+function setChips(chips){
+  const cc=document.getElementById('botChips');
+  cc.innerHTML='';
+  if(!chips||chips.length===0)return;
+  chips.forEach(c=>{
+    const btn=document.createElement('button');
+    btn.className='bot-chip';btn.textContent=c;
+    btn.onclick=()=>{
+      addMsg(c,'user');
+      collectAndAdvance(c);
+      setChips([]);
+    };
+    cc.appendChild(btn);
+  });
+}
+
+function setInputEnabled(enabled){
+  const inp=document.getElementById('botInput');
+  const snd=document.getElementById('botSend');
+  inp.disabled=!enabled;snd.disabled=!enabled;
+  if(enabled)inp.focus();
+}
+
+function showStep(idx){
+  if(idx>=FLOW.length){submitLead();return;}
+  const step=FLOW[idx];
+  const msg=typeof step.bot==='function'?step.bot(botData):step.bot;
+  showTyping(()=>{
+    addMsg(msg,'bot');
+    if(step.type==='chips'){
+      setChips(step.chips);
+      setInputEnabled(false);
+    } else {
+      setInputEnabled(true);
+      const inp=document.getElementById('botInput');
+      inp.placeholder=step.placeholder||'Type here…';
+    }
+  });
+}
+
+function collectAndAdvance(val){
+  const step=FLOW[currentStep];
+  if(step.validate){
+    const err=step.validate(val);
+    if(typeof err==='string'){
+      showTyping(()=>addMsg(err,'bot'));
+      setInputEnabled(true);
+      return;
+    }
+  }
+  botData[step.key]=val;
+  currentStep++;
+  setTimeout(()=>showStep(currentStep),400);
+}
+
+function sendUserMsg(){
+  if(isTyping)return;
+  const inp=document.getElementById('botInput');
+  const val=inp.value.trim();
+  if(!val)return;
+  inp.value='';inp.style.height='auto';
+  addMsg(val,'user');
+  setInputEnabled(false);
+  collectAndAdvance(val);
+}
+
+async function submitLead(){
+  setChips([]);
+  setInputEnabled(false);
+  showTyping(async()=>{
+    addMsg("Thanks — I have everything I need! Let me send your details to the team now…",'bot');
+    const payload={
+      source:'Chatbot',
+      timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),
+      name:botData.name||'',
+      email:botData.email||'',
+      org:botData.org||'',
+      area:botData.area||'',
+      location:botData.location||'',
+      challenge:botData.challenge||'',
+      timeline:botData.timeline||''
+    };
+    try{
+      await fetch(APPS_SCRIPT_URL,{
+        method:'POST',mode:'no-cors',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(payload)
+      });
+    }catch(e){}
+
+    setTimeout(()=>{
+      const wrap=document.getElementById('botMessages');
+      const row=document.getElementById('botInputRow');
+      if(row)row.style.display='none';
+
+      const suc=document.createElement('div');
+      suc.className='bot-success';
+      suc.innerHTML=`
+        <div class="bot-success-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="bot-success-title">Enquiry sent!</div>
+        <div class="bot-success-sub">We've forwarded your details to <strong style="color:var(--teal);">support@click2seek.in</strong>.<br>Someone from the team will be in touch within <strong>48 hours</strong>.</div>
+        <button onclick="restartBot()" style="margin-top:16px;padding:9px 20px;background:var(--teal-light);color:var(--teal);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;">Start a new enquiry</button>
+      `;
+      wrap.appendChild(suc);
+      wrap.scrollTop=wrap.scrollHeight;
+    },800);
+  });
+}
+
+function restartBot(){
+  botData={};currentStep=0;
+  document.getElementById('botMessages').innerHTML='';
+  setChips([]);
+  const row=document.getElementById('botInputRow');
+  if(row)row.style.display='flex';
+  setTimeout(()=>showStep(0),200);
+}
+
+/* ════════════════════════════════════════
+   MARQUEE
+════════════════════════════════════════ */
 const items=['Computer Vision','Marine Biology AI','Wildlife Monitoring','Camera Trap Intelligence','Underwater Species ID','Drone Survey AI','Ethology Analysis','Bioacoustic Detection','Edge AI Systems','Biodiversity Analytics','Conservation Technology','Ecological Research'];
 const track=document.getElementById('marquee');
 const sep='<span style="display:inline-block;width:2px;height:10px;background:rgba(255,255,255,0.25);margin:0 24px;vertical-align:middle;"></span>';
 const inner=items.map(t=>`<span style="white-space:nowrap;font-size:13px;font-weight:600;letter-spacing:.5px;color:rgba(255,255,255,0.85);padding:0 24px;">${t}${sep}</span>`).join('');
 track.innerHTML=inner+inner;
 
-/* ── HERO CANVAS ─────────────────────── */
+/* ════════════════════════════════════════
+   HERO CANVAS
+════════════════════════════════════════ */
 (function(){
   const c=document.getElementById('heroCanvas');if(!c)return;
   const ctx=c.getContext('2d');
   let W,H,fish=[],particles=[];
   function resize(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}
   resize();window.addEventListener('resize',resize);
-  function makeFish(){
-    return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*.6,size:6+Math.random()*14,col:['#5DCAA5','#85B7EB','#C8A96E','#7ed9c8','#fff'][Math.floor(Math.random()*5)],t:Math.random()*100,species:Math.floor(Math.random()*3)};
-  }
+  function makeFish(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*.6,size:6+Math.random()*14,col:['#5DCAA5','#85B7EB','#C8A96E','#7ed9c8','#fff'][Math.floor(Math.random()*5)],t:Math.random()*100};}
   for(let i=0;i<28;i++)fish.push(makeFish());
   for(let i=0;i<60;i++)particles.push({x:Math.random()*500,y:Math.random()*700,r:.5+Math.random()*1.5,vy:-.2-Math.random()*.5,a:Math.random()});
   let bboxes=[{x:.35,y:.2,w:.25,h:.15,lbl:'Sardinella longiceps',conf:94,col:'#5DCAA5'},{x:.1,y:.5,w:.2,h:.2,lbl:'Lutjanus argentimaculatus',conf:87,col:'#85B7EB'},{x:.65,y:.55,w:.18,h:.12,lbl:'Thunnus albacares',conf:91,col:'#C8A96E'}];
   let t=0;
   function draw(){
-    ctx.clearRect(0,0,W,H);
-    ctx.fillStyle='rgba(11,61,92,0.97)';ctx.fillRect(0,0,W,H);
-    // caustics
+    ctx.clearRect(0,0,W,H);ctx.fillStyle='rgba(11,61,92,0.97)';ctx.fillRect(0,0,W,H);
     ctx.globalAlpha=.06;
-    for(let i=0;i<6;i++){
-      const cx=W*(.1+i*.15),cy=H*(.2+Math.sin(t*.008+i)*.15);
-      const g=ctx.createRadialGradient(cx,cy,10,cx,cy,120);
-      g.addColorStop(0,'rgba(26,148,133,0.6)');g.addColorStop(1,'rgba(0,0,0,0)');
-      ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,120,0,Math.PI*2);ctx.fill();
-    }
+    for(let i=0;i<6;i++){const cx=W*(.1+i*.15),cy=H*(.2+Math.sin(t*.008+i)*.15);const g=ctx.createRadialGradient(cx,cy,10,cx,cy,120);g.addColorStop(0,'rgba(26,148,133,0.6)');g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,120,0,Math.PI*2);ctx.fill();}
     ctx.globalAlpha=1;
-    // particles
-    particles.forEach(p=>{
-      p.y+=p.vy;if(p.y<0)p.y=H;
-      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(255,255,255,${.1+p.a*.15})`;ctx.fill();
-    });
-    // fish
+    particles.forEach(p=>{p.y+=p.vy;if(p.y<0)p.y=H;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${.1+p.a*.15})`;ctx.fill();});
     fish.forEach(f=>{
-      f.x+=f.vx;f.y+=f.vy;f.t+=.04;
-      f.y+=Math.sin(f.t)*.3;
-      if(f.x<-40)f.x=W+20;if(f.x>W+40)f.x=-20;
-      if(f.y<0)f.y=H;if(f.y>H)f.y=0;
-      const dir=f.vx>0?1:-1;
-      ctx.save();ctx.translate(f.x,f.y);ctx.scale(dir,1);
-      ctx.globalAlpha=.8;
-      ctx.beginPath();ctx.ellipse(0,0,f.size,f.size*.45,0,0,Math.PI*2);
-      ctx.fillStyle=f.col;ctx.fill();
-      ctx.beginPath();ctx.moveTo(-f.size*.7,0);ctx.lineTo(-f.size*1.2,-f.size*.4);ctx.lineTo(-f.size*1.2,f.size*.4);ctx.closePath();
-      ctx.fillStyle=f.col;ctx.fill();
-      ctx.globalAlpha=.4;ctx.beginPath();ctx.ellipse(-f.size*.2,-f.size*.05,f.size*.4,f.size*.2,0,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,.4)';ctx.fill();
+      f.x+=f.vx;f.y+=f.vy;f.t+=.04;f.y+=Math.sin(f.t)*.3;
+      if(f.x<-40)f.x=W+20;if(f.x>W+40)f.x=-20;if(f.y<0)f.y=H;if(f.y>H)f.y=0;
+      const dir=f.vx>0?1:-1;ctx.save();ctx.translate(f.x,f.y);ctx.scale(dir,1);ctx.globalAlpha=.8;
+      ctx.beginPath();ctx.ellipse(0,0,f.size,f.size*.45,0,0,Math.PI*2);ctx.fillStyle=f.col;ctx.fill();
+      ctx.beginPath();ctx.moveTo(-f.size*.7,0);ctx.lineTo(-f.size*1.2,-f.size*.4);ctx.lineTo(-f.size*1.2,f.size*.4);ctx.closePath();ctx.fillStyle=f.col;ctx.fill();
       ctx.globalAlpha=1;ctx.restore();
     });
-    // detection boxes (animated fade in/out)
     bboxes.forEach((b,i)=>{
-      const phase=Math.sin(t*.015+i*2.1);const a=.6+phase*.2;
-      ctx.globalAlpha=a;
-      ctx.strokeStyle=b.col;ctx.lineWidth=1.5;
-      ctx.setLineDash([6,3]);
-      ctx.strokeRect(b.x*W,b.y*H,b.w*W,b.h*H);
-      ctx.setLineDash([]);
-      // corner accents
-      const bx=b.x*W,by=b.y*H,bw=b.w*W,bh=b.h*H,l=10;
-      ctx.lineWidth=2.5;ctx.setLineDash([]);
-      [[bx,by,bx+l,by,bx,by+l],[bx+bw,by,bx+bw-l,by,bx+bw,by+l],[bx,by+bh,bx+l,by+bh,bx,by+bh-l],[bx+bw,by+bh,bx+bw-l,by+bh,bx+bw,by+bh-l]].forEach(([x1,y1,x2,y2,x3,y3])=>{
-        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.moveTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();
-      });
-      // label
-      ctx.globalAlpha=a*.9;ctx.fillStyle=b.col;ctx.fillRect(b.x*W,b.y*H-22,(b.lbl.length*6.2+50),20);
-      ctx.fillStyle='#030a12';ctx.font='bold 9px DM Mono,monospace';ctx.fillText(`${b.lbl} ${b.conf}%`,b.x*W+6,(b.y*H-6));
-      ctx.globalAlpha=1;
+      const phase=Math.sin(t*.015+i*2.1);const a=.6+phase*.2;ctx.globalAlpha=a;
+      ctx.strokeStyle=b.col;ctx.lineWidth=1.5;ctx.setLineDash([6,3]);ctx.strokeRect(b.x*W,b.y*H,b.w*W,b.h*H);ctx.setLineDash([]);
+      const bx=b.x*W,by=b.y*H,bw=b.w*W,bh=b.h*H,l=10;ctx.lineWidth=2.5;
+      [[bx,by,bx+l,by,bx,by+l],[bx+bw,by,bx+bw-l,by,bx+bw,by+l],[bx,by+bh,bx+l,by+bh,bx,by+bh-l],[bx+bw,by+bh,bx+bw-l,by+bh,bx+bw,by+bh-l]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.moveTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});
+      ctx.globalAlpha=a*.9;ctx.fillStyle=b.col;ctx.fillRect(b.x*W,b.y*H-22,(b.lbl.length*6.2+50),20);ctx.fillStyle='#030a12';ctx.font='bold 9px DM Mono,monospace';ctx.fillText(`${b.lbl} ${b.conf}%`,b.x*W+6,(b.y*H-6));ctx.globalAlpha=1;
     });
-    // scan line
     const sl=(t%H);ctx.globalAlpha=.06;ctx.fillStyle='#1A9485';ctx.fillRect(0,sl,W,2);ctx.globalAlpha=1;
     t++;requestAnimationFrame(draw);
   }draw();
 })();
 
-/* ── PRODUCT CARD CANVASES ─────────────── */
-function drawUnderwaterSonar(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  window.addEventListener('resize',resize);
-  const dots=Array.from({length:25},()=>({r:10+Math.random()*60,a:Math.random()*Math.PI*2,v:.01+Math.random()*.02,size:2+Math.random()*3}));
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    const cx=W/2,cy=H/2;
-    for(let i=1;i<=5;i++){ctx.beginPath();ctx.arc(cx,cy,i*18,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.08+i*.02})`;ctx.lineWidth=.8;ctx.stroke();}
-    ctx.save();ctx.translate(cx,cy);ctx.rotate(t*.03);
-    const g=ctx.createConicalGradient?null:null;
-    ctx.beginPath();ctx.moveTo(0,0);ctx.arc(0,0,90,.0,1.2,false);ctx.lineTo(0,0);ctx.fillStyle='rgba(26,148,133,0.08)';ctx.fill();
-    ctx.restore();
-    ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(t*.03)*90,cy+Math.sin(t*.03)*90);ctx.strokeStyle='rgba(26,148,133,0.6)';ctx.lineWidth=1.5;ctx.stroke();
-    dots.forEach(d=>{d.a+=d.v*.04;const x=cx+Math.cos(d.a)*d.r,y=cy+Math.sin(d.a)*d.r;ctx.beginPath();ctx.arc(x,y,d.size,0,Math.PI*2);ctx.fillStyle='rgba(93,202,165,.7)';ctx.fill();});
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-function drawForestGrid(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  const trees=Array.from({length:20},()=>({x:Math.random(),y:Math.random(),s:.4+Math.random()*.6}));
-  const animals=[{x:.2,y:.6,label:'Tiger',col:'#EF9F27'},{x:.7,y:.4,label:'Elephant',col:'#888780'},{x:.5,y:.75,label:'Deer',col:'#C8A96E'}];
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    trees.forEach(tr=>{
-      const x=tr.x*W,y=tr.y*H,s=tr.s;
-      ctx.fillStyle='rgba(45,90,39,0.3)';ctx.beginPath();ctx.arc(x,y,18*s,0,Math.PI*2);ctx.fill();
-      ctx.fillStyle='rgba(45,90,39,0.15)';ctx.beginPath();ctx.arc(x,y,28*s,0,Math.PI*2);ctx.fill();
-    });
-    const scan=(t%H);ctx.globalAlpha=.04;ctx.fillStyle='#7bed9f';ctx.fillRect(0,scan,W,3);ctx.globalAlpha=1;
-    animals.forEach(a=>{
-      const x=a.x*W,y=a.y*H,p=.5+.5*Math.sin(t*.04+a.x*10);
-      ctx.strokeStyle=a.col;ctx.lineWidth=1.5;ctx.globalAlpha=.7+p*.15;
-      const bw=50,bh=32;
-      ctx.strokeRect(x-bw/2,y-bh/2,bw,bh);
-      [[x-bw/2,y-bh/2,x-bw/2+8,y-bh/2,x-bw/2,y-bh/2+8],[x+bw/2,y-bh/2,x+bw/2-8,y-bh/2,x+bw/2,y-bh/2+8],[x-bw/2,y+bh/2,x-bw/2+8,y+bh/2,x-bw/2,y+bh/2-8],[x+bw/2,y+bh/2,x+bw/2-8,y+bh/2,x+bw/2,y+bh/2-8]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});
-      ctx.globalAlpha=.9;ctx.fillStyle=a.col;ctx.fillRect(x-bw/2,y-bh/2-16,a.label.length*6+8,14);ctx.fillStyle='#030a12';ctx.font='bold 8px DM Mono,monospace';ctx.fillText(a.label,x-bw/2+4,y-bh/2-5);
-      ctx.globalAlpha=1;
-    });
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-function drawDroneHeatmap(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  const clusters=Array.from({length:6},()=>({x:Math.random(),y:Math.random(),r:20+Math.random()*30,a:Math.random()*Math.PI*2,v:.005+Math.random()*.01,n:2+Math.floor(Math.random()*12)}));
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    clusters.forEach(cl=>{
-      cl.x+=Math.sin(t*.02+cl.a)*0.001;cl.y+=Math.cos(t*.02+cl.a)*0.001;
-      if(cl.x<0.05||cl.x>0.95)cl.a+=Math.PI;if(cl.y<0.05||cl.y>0.95)cl.a+=Math.PI;
-      const x=cl.x*W,y=cl.y*H;
-      const g=ctx.createRadialGradient(x,y,2,x,y,cl.r);
-      const intensity=cl.n/14;
-      g.addColorStop(0,`rgba(${Math.floor(intensity*220+35)},${Math.floor((1-intensity)*180+20)},0,0.35)`);
-      g.addColorStop(1,'rgba(0,0,0,0)');
-      ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,cl.r,0,Math.PI*2);ctx.fill();
-    });
-    // grid overlay
-    for(let gx=0;gx<W;gx+=30){ctx.beginPath();ctx.moveTo(gx,0);ctx.lineTo(gx,H);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}
-    for(let gy=0;gy<H;gy+=30){ctx.beginPath();ctx.moveTo(0,gy);ctx.lineTo(W,gy);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}
-    // drone cross
-    const dx=W/2+Math.sin(t*.02)*W*.15,dy=H/2+Math.cos(t*.03)*H*.1;
-    ctx.strokeStyle='rgba(255,255,255,0.7)';ctx.lineWidth=1.5;
-    ctx.beginPath();ctx.moveTo(dx-12,dy);ctx.lineTo(dx+12,dy);ctx.moveTo(dx,dy-12);ctx.lineTo(dx,dy+12);ctx.stroke();
-    ctx.beginPath();ctx.arc(dx,dy,18,0,Math.PI*2);ctx.strokeStyle='rgba(255,255,255,0.3)';ctx.lineWidth=1;ctx.stroke();
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-function drawBehaviourPlot(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  const poses=Array.from({length:8},()=>({x:.1+Math.random()*.8,y:.2+Math.random()*.7,bx:.05+Math.random()*.9,by:.1+Math.random()*.8,label:['Feeding','Resting','Alert','Social','Grooming','Foraging','Play','Vigilant'][Math.floor(Math.random()*8)]}));
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    // skeleton overlay simulation
-    poses.forEach((p,i)=>{
-      const x=p.x*W+(Math.sin(t*.05+i))*8,y=p.y*H+(Math.cos(t*.04+i))*5;
-      ctx.globalAlpha=.6;ctx.fillStyle='#C8A96E';ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();
-      ctx.globalAlpha=.35;ctx.strokeStyle='#C8A96E';ctx.lineWidth=1;
-      ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(p.bx*W,p.by*H);ctx.stroke();
-      ctx.globalAlpha=1;ctx.fillStyle='rgba(200,169,110,0.8)';ctx.fillRect(x-20,y-18,p.label.length*5.5+6,12);
-      ctx.fillStyle='#030a12';ctx.font='7px DM Mono,monospace';ctx.fillText(p.label,x-17,y-8);
-    });
-    // time counter
-    ctx.fillStyle='rgba(255,255,255,0.5)';ctx.font='9px DM Mono,monospace';ctx.fillText(`T+${(t*0.5).toFixed(0)}s`,8,H-10);
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-function drawAcoustic(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  const bands=Array.from({length:40},(_,i)=>({f:i,phase:Math.random()*Math.PI*2,amp:0.1+Math.random()*.9}));
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    const bw=W/bands.length;
-    bands.forEach((b,i)=>{
-      const h=(.1+b.amp*Math.abs(Math.sin(t*.03+b.phase+i*.2)))*(H*.7);
-      const hue=160+i*3;ctx.fillStyle=`hsla(${hue},70%,55%,0.7)`;
-      ctx.fillRect(i*bw+1,H-h,bw-2,h);
-    });
-    // whale vocalisation pulse
-    const p=Math.sin(t*.08);if(p>0.5){
-      ctx.globalAlpha=(p-.5)*2;ctx.strokeStyle='#1A9485';ctx.lineWidth=1.5;
-      ctx.beginPath();for(let x=0;x<W;x++){const y=H*.5+Math.sin(x*.1+t*.15)*(H*.25)*p;x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();
-    }
-    ctx.globalAlpha=1;
-    ctx.fillStyle='rgba(255,255,255,0.4)';ctx.font='9px DM Mono,monospace';ctx.fillText('0 Hz',4,H-4);ctx.fillText('48 kHz',W-44,H-4);
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-function drawDashboard(id){
-  const c=document.getElementById(id);if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  const series=Array.from({length:50},(_,i)=>({v:0.2+Math.random()*.7,x:i/50}));
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    // grid
-    for(let i=0;i<=5;i++){ctx.beginPath();ctx.moveTo(0,i*H/5);ctx.lineTo(W,i*H/5);ctx.strokeStyle='rgba(0,229,255,0.06)';ctx.lineWidth=.5;ctx.stroke();}
-    // lines
-    const colors=['#1A9485','#C8A96E','#5DCAA5'];
-    [0,1,2].forEach(li=>{
-      ctx.beginPath();series.forEach((s,i)=>{
-        const x=i/series.length*W,y=H*(.85-s.v*.6*(1+li*.1)*Math.sin(t*.02+li*2+i*.1));
-        i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
-      });ctx.strokeStyle=colors[li];ctx.lineWidth=1.5;ctx.stroke();
-    });
-    // legend
-    ['Tiger','Elephant','Gaur'].forEach((l,i)=>{ctx.fillStyle=colors[i];ctx.beginPath();ctx.arc(12+i*60,12,4,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(255,255,255,0.6)';ctx.font='8px DM Mono,monospace';ctx.fillText(l,20+i*60,15);});
-    t++;requestAnimationFrame(draw);
-  }draw();
-}
-// Init product canvases
-drawUnderwaterSonar('p1canvas');
-drawForestGrid('p2canvas');
-drawDroneHeatmap('p3canvas');
-drawBehaviourPlot('p4canvas');
-drawAcoustic('p5canvas');
-drawDashboard('p6canvas');
+/* ════════════════════════════════════════
+   PRODUCT CARD CANVASES
+════════════════════════════════════════ */
+function drawUnderwaterSonar(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();window.addEventListener('resize',resize);const dots=Array.from({length:25},()=>({r:10+Math.random()*60,a:Math.random()*Math.PI*2,v:.01+Math.random()*.02,size:2+Math.random()*3}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);const cx=W/2,cy=H/2;for(let i=1;i<=5;i++){ctx.beginPath();ctx.arc(cx,cy,i*18,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.08+i*.02})`;ctx.lineWidth=.8;ctx.stroke();}ctx.save();ctx.translate(cx,cy);ctx.rotate(t*.03);ctx.beginPath();ctx.moveTo(0,0);ctx.arc(0,0,90,.0,1.2,false);ctx.lineTo(0,0);ctx.fillStyle='rgba(26,148,133,0.08)';ctx.fill();ctx.restore();ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(t*.03)*90,cy+Math.sin(t*.03)*90);ctx.strokeStyle='rgba(26,148,133,0.6)';ctx.lineWidth=1.5;ctx.stroke();dots.forEach(d=>{d.a+=d.v*.04;const x=cx+Math.cos(d.a)*d.r,y=cy+Math.sin(d.a)*d.r;ctx.beginPath();ctx.arc(x,y,d.size,0,Math.PI*2);ctx.fillStyle='rgba(93,202,165,.7)';ctx.fill();});t++;requestAnimationFrame(draw);}draw();}
+function drawForestGrid(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const trees=Array.from({length:20},()=>({x:Math.random(),y:Math.random(),s:.4+Math.random()*.6}));const animals=[{x:.2,y:.6,label:'Tiger',col:'#EF9F27'},{x:.7,y:.4,label:'Elephant',col:'#888780'},{x:.5,y:.75,label:'Deer',col:'#C8A96E'}];function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);trees.forEach(tr=>{const x=tr.x*W,y=tr.y*H,s=tr.s;ctx.fillStyle='rgba(45,90,39,0.3)';ctx.beginPath();ctx.arc(x,y,18*s,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(45,90,39,0.15)';ctx.beginPath();ctx.arc(x,y,28*s,0,Math.PI*2);ctx.fill();});const scan=(t%H);ctx.globalAlpha=.04;ctx.fillStyle='#7bed9f';ctx.fillRect(0,scan,W,3);ctx.globalAlpha=1;animals.forEach(a=>{const x=a.x*W,y=a.y*H,p=.5+.5*Math.sin(t*.04+a.x*10);ctx.strokeStyle=a.col;ctx.lineWidth=1.5;ctx.globalAlpha=.7+p*.15;const bw=50,bh=32;ctx.strokeRect(x-bw/2,y-bh/2,bw,bh);[[x-bw/2,y-bh/2,x-bw/2+8,y-bh/2,x-bw/2,y-bh/2+8],[x+bw/2,y-bh/2,x+bw/2-8,y-bh/2,x+bw/2,y-bh/2+8],[x-bw/2,y+bh/2,x-bw/2+8,y+bh/2,x-bw/2,y+bh/2-8],[x+bw/2,y+bh/2,x+bw/2-8,y+bh/2,x+bw/2,y+bh/2-8]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});ctx.globalAlpha=.9;ctx.fillStyle=a.col;ctx.fillRect(x-bw/2,y-bh/2-16,a.label.length*6+8,14);ctx.fillStyle='#030a12';ctx.font='bold 8px DM Mono,monospace';ctx.fillText(a.label,x-bw/2+4,y-bh/2-5);ctx.globalAlpha=1;});t++;requestAnimationFrame(draw);}draw();}
+function drawDroneHeatmap(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const clusters=Array.from({length:6},()=>({x:Math.random(),y:Math.random(),r:20+Math.random()*30,a:Math.random()*Math.PI*2,v:.005+Math.random()*.01,n:2+Math.floor(Math.random()*12)}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);clusters.forEach(cl=>{cl.x+=Math.sin(t*.02+cl.a)*0.001;cl.y+=Math.cos(t*.02+cl.a)*0.001;if(cl.x<0.05||cl.x>0.95)cl.a+=Math.PI;if(cl.y<0.05||cl.y>0.95)cl.a+=Math.PI;const x=cl.x*W,y=cl.y*H;const g=ctx.createRadialGradient(x,y,2,x,y,cl.r);const intensity=cl.n/14;g.addColorStop(0,`rgba(${Math.floor(intensity*220+35)},${Math.floor((1-intensity)*180+20)},0,0.35)`);g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,cl.r,0,Math.PI*2);ctx.fill();});for(let gx=0;gx<c.width;gx+=30){ctx.beginPath();ctx.moveTo(gx,0);ctx.lineTo(gx,c.height);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}for(let gy=0;gy<c.height;gy+=30){ctx.beginPath();ctx.moveTo(0,gy);ctx.lineTo(c.width,gy);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}const dx=c.width/2+Math.sin(t*.02)*c.width*.15,dy=c.height/2+Math.cos(t*.03)*c.height*.1;ctx.strokeStyle='rgba(255,255,255,0.7)';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(dx-12,dy);ctx.lineTo(dx+12,dy);ctx.moveTo(dx,dy-12);ctx.lineTo(dx,dy+12);ctx.stroke();ctx.beginPath();ctx.arc(dx,dy,18,0,Math.PI*2);ctx.strokeStyle='rgba(255,255,255,0.3)';ctx.lineWidth=1;ctx.stroke();t++;requestAnimationFrame(draw);}draw();}
+function drawBehaviourPlot(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const poses=Array.from({length:8},()=>({x:.1+Math.random()*.8,y:.2+Math.random()*.7,bx:.05+Math.random()*.9,by:.1+Math.random()*.8,label:['Feeding','Resting','Alert','Social','Grooming','Foraging','Play','Vigilant'][Math.floor(Math.random()*8)]}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);poses.forEach((p,i)=>{const x=p.x*W+(Math.sin(t*.05+i))*8,y=p.y*H+(Math.cos(t*.04+i))*5;ctx.globalAlpha=.6;ctx.fillStyle='#C8A96E';ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();ctx.globalAlpha=.35;ctx.strokeStyle='#C8A96E';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(p.bx*W,p.by*H);ctx.stroke();ctx.globalAlpha=1;ctx.fillStyle='rgba(200,169,110,0.8)';ctx.fillRect(x-20,y-18,p.label.length*5.5+6,12);ctx.fillStyle='#030a12';ctx.font='7px DM Mono,monospace';ctx.fillText(p.label,x-17,y-8);});ctx.fillStyle='rgba(255,255,255,0.5)';ctx.font='9px DM Mono,monospace';ctx.fillText(`T+${(t*0.5).toFixed(0)}s`,8,H-10);t++;requestAnimationFrame(draw);}draw();}
+function drawAcoustic(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const bands=Array.from({length:40},(_,i)=>({f:i,phase:Math.random()*Math.PI*2,amp:0.1+Math.random()*.9}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);const bw=W/bands.length;bands.forEach((b,i)=>{const h=(.1+b.amp*Math.abs(Math.sin(t*.03+b.phase+i*.2)))*(H*.7);const hue=160+i*3;ctx.fillStyle=`hsla(${hue},70%,55%,0.7)`;ctx.fillRect(i*bw+1,H-h,bw-2,h);});const p=Math.sin(t*.08);if(p>0.5){ctx.globalAlpha=(p-.5)*2;ctx.strokeStyle='#1A9485';ctx.lineWidth=1.5;ctx.beginPath();for(let x=0;x<W;x++){const y=H*.5+Math.sin(x*.1+t*.15)*(H*.25)*p;x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();}ctx.globalAlpha=1;ctx.fillStyle='rgba(255,255,255,0.4)';ctx.font='9px DM Mono,monospace';ctx.fillText('0 Hz',4,H-4);ctx.fillText('48 kHz',W-44,H-4);t++;requestAnimationFrame(draw);}draw();}
+function drawDashboard(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const series=Array.from({length:50},(_,i)=>({v:0.2+Math.random()*.7,x:i/50}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);for(let i=0;i<=5;i++){ctx.beginPath();ctx.moveTo(0,i*H/5);ctx.lineTo(W,i*H/5);ctx.strokeStyle='rgba(0,229,255,0.06)';ctx.lineWidth=.5;ctx.stroke();}const colors=['#1A9485','#C8A96E','#5DCAA5'];[0,1,2].forEach(li=>{ctx.beginPath();series.forEach((s,i)=>{const x=i/series.length*W,y=H*(.85-s.v*.6*(1+li*.1)*Math.sin(t*.02+li*2+i*.1));i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});ctx.strokeStyle=colors[li];ctx.lineWidth=1.5;ctx.stroke();});['Tiger','Elephant','Gaur'].forEach((l,i)=>{ctx.fillStyle=colors[i];ctx.beginPath();ctx.arc(12+i*60,12,4,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(255,255,255,0.6)';ctx.font='8px DM Mono,monospace';ctx.fillText(l,20+i*60,15);});t++;requestAnimationFrame(draw);}draw();}
 
-/* ── PIPELINE CANVAS ─────────────────── */
+drawUnderwaterSonar('p1canvas');drawForestGrid('p2canvas');drawDroneHeatmap('p3canvas');
+drawBehaviourPlot('p4canvas');drawAcoustic('p5canvas');drawDashboard('p6canvas');
+
+/* ════════════════════════════════════════
+   PIPELINE CANVAS
+════════════════════════════════════════ */
 (function(){
   const c=document.getElementById('pipelineCanvas');if(!c)return;
   const ctx=c.getContext('2d');
@@ -880,18 +1000,14 @@ drawDashboard('p6canvas');
       if(i<stages.length-1){ctx.beginPath();ctx.moveTo(cx+26,cy);ctx.lineTo((i+1)*sw+sw/2-26,cy);ctx.strokeStyle='rgba(26,148,133,0.25)';ctx.lineWidth=1;ctx.setLineDash([4,4]);ctx.stroke();ctx.setLineDash([]);}
     });
     pkts=pkts.filter(p=>p.s<stages.length-1);
-    pkts.forEach(p=>{
-      p.t+=0.025;if(p.t>=1){p.s=Math.min(p.s+1,stages.length-2);p.t=0;}
-      const x1=p.s*sw+sw/2+26,x2=(p.s+1)*sw+sw/2-26;
-      const x=x1+(x2-x1)*p.t,y=H/2;
-      const a=Math.sin(p.t*Math.PI);
-      ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle=cols[p.s];ctx.globalAlpha=a;ctx.fill();ctx.globalAlpha=1;
-    });
+    pkts.forEach(p=>{p.t+=0.025;if(p.t>=1){p.s=Math.min(p.s+1,stages.length-2);p.t=0;}const x1=p.s*sw+sw/2+26,x2=(p.s+1)*sw+sw/2-26;const x=x1+(x2-x1)*p.t,y=H/2;const a=Math.sin(p.t*Math.PI);ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle=cols[p.s];ctx.globalAlpha=a;ctx.fill();ctx.globalAlpha=1;});
     t++;requestAnimationFrame(draw);
   }draw();
 })();
 
-/* ── ABOUT CANVAS ─────────────────────── */
+/* ════════════════════════════════════════
+   ABOUT CANVAS
+════════════════════════════════════════ */
 (function(){
   const c=document.getElementById('aboutCanvas');if(!c)return;
   const ctx=c.getContext('2d');let t=0;
@@ -899,40 +1015,29 @@ drawDashboard('p6canvas');
   window.addEventListener('resize',resize);
   function draw(){
     const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    // rotating gradient rings
-    for(let i=1;i<=4;i++){
-      ctx.save();ctx.translate(W/2,H/2);ctx.rotate(t*.005*i);
-      ctx.beginPath();ctx.ellipse(0,0,W*.3*i/4,H*.25*i/4,0,0,Math.PI*2);
-      ctx.strokeStyle=`rgba(26,148,133,${.04+i*.02})`;ctx.lineWidth=1;ctx.stroke();
-      ctx.restore();
-    }
-    // data points
-    for(let i=0;i<20;i++){
-      const a=i/20*Math.PI*2+t*.01,r=W*.3;
-      const x=W/2+Math.cos(a)*r,y=H/2+Math.sin(a)*r*.6;
-      ctx.beginPath();ctx.arc(x,y,1.5,0,Math.PI*2);ctx.fillStyle='rgba(26,148,133,0.5)';ctx.fill();
-    }
+    for(let i=1;i<=4;i++){ctx.save();ctx.translate(W/2,H/2);ctx.rotate(t*.005*i);ctx.beginPath();ctx.ellipse(0,0,W*.3*i/4,H*.25*i/4,0,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.04+i*.02})`;ctx.lineWidth=1;ctx.stroke();ctx.restore();}
+    for(let i=0;i<20;i++){const a=i/20*Math.PI*2+t*.01,r=W*.3;const x=W/2+Math.cos(a)*r,y=H/2+Math.sin(a)*r*.6;ctx.beginPath();ctx.arc(x,y,1.5,0,Math.PI*2);ctx.fillStyle='rgba(26,148,133,0.5)';ctx.fill();}
     t++;requestAnimationFrame(draw);
   }draw();
 })();
 
-/* ── CONTACT HANDLER ─────────────────── */
+/* ════════════════════════════════════════
+   CONTACT FORM
+════════════════════════════════════════ */
 async function handleContact(){
   const s=document.getElementById('cstatus');
   const f={name:document.getElementById('fname').value+' '+document.getElementById('lname').value,email:document.getElementById('cemail').value,org:document.getElementById('org').value,interest:document.getElementById('interest').value,msg:document.getElementById('msg').value};
   if(!f.email||!f.name.trim()){s.style.cssText='display:block;background:#fdf0ee;color:#993c1d;border:1px solid #f0997b;border-radius:8px;';s.textContent='Please fill in your name and email.';return;}
-  s.style.cssText='display:block;background:#e1f5ee;color:#0f6e56;border:1px solid #5dcaa5;border-radius:8px;';
-  s.textContent='Sending your enquiry...';
-  try{
-    await fetch('https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),...f})});
-  }catch(e){}
-  s.textContent='✓ Enquiry sent! We\'ll be in touch at '+f.email+' within 48 hours.';
+  s.style.cssText='display:block;background:#e1f5ee;color:#0f6e56;border:1px solid #5dcaa5;border-radius:8px;';s.textContent='Sending your enquiry...';
+  try{await fetch('https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:'Contact Form',timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),...f})});}catch(e){}
+  s.textContent="✓ Enquiry sent! We'll be in touch at "+f.email+" within 48 hours.";
 }
 
-/* ── INTERSECTION REVEAL ─────────────── */
+/* ════════════════════════════════════════
+   REVEAL ON SCROLL
+════════════════════════════════════════ */
 const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 </script>
-
 </body>
 </html>
