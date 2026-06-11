@@ -109,6 +109,27 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,44px);font-weig
 .case-sub{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;}
 .case-badge{display:inline-block;font-size:10px;padding:3px 8px;background:rgba(26,148,133,0.4);border-radius:100px;color:rgba(208,237,232,0.9);margin-top:6px;letter-spacing:.5px;}
 
+/* ── VIDEO SECTION ─────────────────────────── */
+.video-section{padding:100px 60px;background:var(--ink);position:relative;overflow:hidden;}
+.video-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 20% 50%,rgba(14,110,98,0.12) 0%,transparent 70%);}
+.video-section-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1;}
+.video-section-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:56px;gap:40px;flex-wrap:wrap;}
+.video-section-header .tag{color:var(--teal-mid);}
+.video-section-header h2{color:#fff;}
+.video-section-header p{font-size:15px;color:rgba(255,255,255,0.6);max-width:380px;line-height:1.8;margin-top:40px;}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.video-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;transition:all .3s;}
+.video-card:hover{border-color:rgba(26,148,133,0.5);box-shadow:0 16px 48px rgba(0,0,0,0.4);transform:translateY(-4px);}
+.video-embed-wrap{position:relative;width:100%;padding-bottom:56.25%;background:#000;overflow:hidden;}
+.video-embed-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none;}
+.video-info{padding:18px 20px;}
+.video-tag{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;color:var(--teal-mid);margin-bottom:8px;}
+.video-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:6px;}
+.video-desc{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;}
+.video-footer{display:flex;align-items:center;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08);}
+.video-dot{width:6px;height:6px;border-radius:50%;background:var(--teal-mid);flex-shrink:0;}
+.video-meta{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:.4px;}
+
 .how-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:20px;}
 .how-steps{display:flex;flex-direction:column;gap:0;}
 .how-step{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--faint);position:relative;}
@@ -312,6 +333,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   .contact-section{padding:60px 24px;}
   footer{padding:48px 24px 28px;}
   #c2s-bot-panel{width:calc(100vw - 32px);right:16px;bottom:92px;}
+  .video-section{padding:60px 24px;}
+  .video-grid{grid-template-columns:1fr;}
+  .video-section-header p{margin-top:12px;}
 }
 </style>
 </head>
@@ -329,6 +353,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
     <ul class="nav-links">
       <li><a href="#products">Products</a></li>
       <li><a href="#deployment">Deployments</a></li>
+      <li><a href="#field-videos">Field Videos</a></li>
       <li><a href="#how">Technology</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
@@ -347,7 +372,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
     <p class="hero-sub">Click2Seek develops cutting-edge computer vision systems for marine biology, wildlife research, and ecological conservation — built for the field, trusted by researchers.</p>
     <div class="hero-actions">
       <a href="#products" class="btn btn-primary">Explore Products →</a>
-      <a href="#deployment" class="btn btn-outline">Our Deployments</a>
+      <a href="#field-videos" class="btn btn-outline">Watch Field Analysis</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="stat-n">4+</div><div class="stat-l">AI Products</div></div>
@@ -509,6 +534,156 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
   </div>
 </div>
 
+<!-- ══════════════════════════════════════
+     FIELD ANALYSIS VIDEOS
+══════════════════════════════════════ -->
+<div class="video-section" id="field-videos">
+  <div class="video-section-inner">
+    <div class="video-section-header">
+      <div>
+        <span class="tag">Field Analysis</span>
+        <h2>AI in the wild —<br><em style="color:var(--teal-mid);">watch it work</em></h2>
+      </div>
+      <p>Real footage from our field deployments — species detection, behavioural analysis, and population census running live in India's forests and coastal waters.</p>
+    </div>
+    <div class="video-grid">
+
+      <!-- Video 1 -->
+      <div class="video-card reveal">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1ZxNrLNGVDeXe2KTsu3maKzbZUrBHQTqM/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">WildLens Sentinel</div>
+          <div class="video-title">Wildlife Detection — Field Analysis 01</div>
+          <div class="video-desc">AI-powered species identification running on camera-trap footage from a protected forest corridor.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · India</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card reveal" style="transition-delay:.1s;">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1_sqb8PpfFP8GR56Q8RxNLVLbueXAoJ-b/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">WildLens Sentinel</div>
+          <div class="video-title">Wildlife Detection — Field Analysis 02</div>
+          <div class="video-desc">Real-time bounding-box inference with confidence scoring over continuous trap footage in low-light conditions.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · India</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card reveal" style="transition-delay:.2s;">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1lBWBvF1X0uJUGz0OED5Rg9sa_flfgK23/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">EthoTrack Pro</div>
+          <div class="video-title">Behavioural Analysis — Field Analysis 03</div>
+          <div class="video-desc">EthoTrack Pro automatically classifying animal activity states from field footage, logging feeding and alert events.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · India</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-card reveal" style="transition-delay:.25s;">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1lpXArc_XeEzyjKMsU3c7SOt3kJFgBSjr/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">EthoTrack Pro</div>
+          <div class="video-title">Behavioural Analysis — Field Analysis 04</div>
+          <div class="video-desc">Multi-individual tracking with pose estimation and social interaction detection across extended observation windows.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · India</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-card reveal" style="transition-delay:.3s;">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1o0pQE3r16Zgfi_mQ1ZWY8f7oZbuyvsPE/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">MarineVue AI</div>
+          <div class="video-title">Marine Species Detection — Field Analysis 05</div>
+          <div class="video-desc">Underwater species identification with population census data from the Bay of Bengal coastal deployment.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · Bay of Bengal</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-card reveal" style="transition-delay:.35s;">
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1pkKPv-UaBU4N0uPkRkHQUb_JRCcNmpov/preview"
+            allow="autoplay"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="video-info">
+          <div class="video-tag">MarineVue AI</div>
+          <div class="video-title">Marine Species Detection — Field Analysis 06</div>
+          <div class="video-desc">Coral reef health assessment combined with fish stock estimation across three underwater transect frames.</div>
+          <div class="video-footer">
+            <div class="video-dot"></div>
+            <div class="video-meta">Click2Seek Field Recording · Bay of Bengal</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drive note -->
+    <div style="margin-top:36px;text-align:center;font-size:13px;color:rgba(255,255,255,0.35);">
+      Videos hosted on Google Drive · For best results use Chrome or Firefox · 
+      <a href="mailto:support@click2seek.in" style="color:var(--teal-mid);text-decoration:none;font-weight:600;">Request full-resolution footage →</a>
+    </div>
+  </div>
+</div>
+
 <!-- HOW IT WORKS -->
 <section id="how">
   <span class="tag">Technology</span>
@@ -617,6 +792,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
         <ul class="footer-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#deployment">Field Deployments</a></li>
+          <li><a href="#field-videos">Field Analysis Videos</a></li>
           <li><a href="#how">Technology</a></li>
           <li><a href="#contact">Research Collaboration</a></li>
           <li><a href="mailto:support@click2seek.in">Contact</a></li>
@@ -642,11 +818,9 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
 ══════════════════════════════════════ -->
 <button id="c2s-bot-toggle" aria-label="Chat with us" title="Chat with Click2Seek">
   <div class="bot-pulse"></div>
-  <!-- chat icon -->
   <svg class="ico-chat" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
-  <!-- close icon -->
   <svg class="ico-close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
     <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
@@ -666,10 +840,8 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
       <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/></svg>
     </button>
   </div>
-
   <div class="bot-messages" id="botMessages"></div>
   <div class="bot-chips" id="botChips"></div>
-
   <div class="bot-input-row" id="botInputRow">
     <textarea class="bot-input" id="botInput" placeholder="Type your message…" rows="1"
       onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendUserMsg();}"
@@ -681,293 +853,52 @@ footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:60px 60px 36px;
 </div>
 
 <script>
-/* ════════════════════════════════════════
-   CHATBOT LOGIC
-════════════════════════════════════════ */
 const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec';
 
 const FLOW=[
-  {
-    id:'welcome',
-    bot:"👋 Hi! I'm the Click2Seek assistant. I'd love to learn about your research and see how we can help.\n\nFirst — what's your name?",
-    type:'text', key:'name', placeholder:'e.g. Dr. Meera Nair',
-    next:'email'
-  },
-  {
-    id:'email',
-    bot:(d)=>`Great to meet you, ${d.name.split(' ')[0]}! What email address should we reach you at?`,
-    type:'text', key:'email', placeholder:'you@institution.in',
-    validate:(v)=>/\S+@\S+\.\S+/.test(v)||'Please enter a valid email address.',
-    next:'org'
-  },
-  {
-    id:'org',
-    bot:'Which organisation or institution are you from?',
-    type:'text', key:'org', placeholder:'e.g. Wildlife Institute of India',
-    next:'area'
-  },
-  {
-    id:'area',
-    bot:'What area of work best describes your interest in Click2Seek?',
-    type:'chips',
-    key:'area',
-    chips:['Marine Biology','Wildlife Monitoring','Drone Surveys','Behavioural Ecology','Bioacoustics','Biodiversity Analytics','Something else'],
-    next:'location'
-  },
-  {
-    id:'location',
-    bot:(d)=>`Wonderful! Where is your study area or field site located?`,
-    type:'text', key:'location', placeholder:'e.g. Sundarbans, West Bengal',
-    next:'challenge'
-  },
-  {
-    id:'challenge',
-    bot:'In a few words — what is the core monitoring challenge you are trying to solve?',
-    type:'text', key:'challenge', placeholder:'e.g. Track tiger corridor use across 3 reserves',
-    next:'timeline'
-  },
-  {
-    id:'timeline',
-    bot:'What is your approximate project timeline or deployment target?',
-    type:'chips',
-    key:'timeline',
-    chips:['Within 3 months','3–6 months','6–12 months','Just exploring','Ongoing / Permanent'],
-    next:'submit'
-  }
+  {id:'welcome',bot:"👋 Hi! I'm the Click2Seek assistant. I'd love to learn about your research and see how we can help.\n\nFirst — what's your name?",type:'text',key:'name',placeholder:'e.g. Dr. Meera Nair',next:'email'},
+  {id:'email',bot:(d)=>`Great to meet you, ${d.name.split(' ')[0]}! What email address should we reach you at?`,type:'text',key:'email',placeholder:'you@institution.in',validate:(v)=>/\S+@\S+\.\S+/.test(v)||'Please enter a valid email address.',next:'org'},
+  {id:'org',bot:'Which organisation or institution are you from?',type:'text',key:'org',placeholder:'e.g. Wildlife Institute of India',next:'area'},
+  {id:'area',bot:'What area of work best describes your interest in Click2Seek?',type:'chips',key:'area',chips:['Marine Biology','Wildlife Monitoring','Drone Surveys','Behavioural Ecology','Bioacoustics','Biodiversity Analytics','Something else'],next:'location'},
+  {id:'location',bot:(d)=>`Wonderful! Where is your study area or field site located?`,type:'text',key:'location',placeholder:'e.g. Sundarbans, West Bengal',next:'challenge'},
+  {id:'challenge',bot:'In a few words — what is the core monitoring challenge you are trying to solve?',type:'text',key:'challenge',placeholder:'e.g. Track tiger corridor use across 3 reserves',next:'timeline'},
+  {id:'timeline',bot:'What is your approximate project timeline or deployment target?',type:'chips',key:'timeline',chips:['Within 3 months','3–6 months','6–12 months','Just exploring','Ongoing / Permanent'],next:'submit'}
 ];
 
-let botData={};
-let currentStep=0;
-let botOpen=false;
-let isTyping=false;
+let botData={},currentStep=0,botOpen=false,isTyping=false;
 
-function toggleBot(){
-  botOpen=!botOpen;
-  document.getElementById('c2s-bot-toggle').classList.toggle('open',botOpen);
-  document.getElementById('c2s-bot-panel').classList.toggle('open',botOpen);
-  if(botOpen&&currentStep===0&&document.getElementById('botMessages').children.length===0){
-    setTimeout(()=>showStep(0),300);
-  }
-}
+function toggleBot(){botOpen=!botOpen;document.getElementById('c2s-bot-toggle').classList.toggle('open',botOpen);document.getElementById('c2s-bot-panel').classList.toggle('open',botOpen);if(botOpen&&currentStep===0&&document.getElementById('botMessages').children.length===0){setTimeout(()=>showStep(0),300);}}
 document.getElementById('c2s-bot-toggle').addEventListener('click',toggleBot);
 
-function addMsg(text,role){
-  const wrap=document.getElementById('botMessages');
-  const div=document.createElement('div');
-  div.className=`bot-msg ${role}`;
-  const bw=document.createElement('div');
-  bw.className='bot-bubble-wrap';
-  const bub=document.createElement('div');
-  bub.className='bot-bubble';
-  bub.style.whiteSpace='pre-wrap';
-  bub.textContent=text;
-  bw.appendChild(bub);
-  if(role==='bot'){
-    const av=document.createElement('div');
-    av.className='bot-mini-avatar';
-    av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;
-    div.appendChild(av);
-  }
-  div.appendChild(bw);
-  wrap.appendChild(div);
-  wrap.scrollTop=wrap.scrollHeight;
-  return bub;
-}
+function addMsg(text,role){const wrap=document.getElementById('botMessages');const div=document.createElement('div');div.className=`bot-msg ${role}`;const bw=document.createElement('div');bw.className='bot-bubble-wrap';const bub=document.createElement('div');bub.className='bot-bubble';bub.style.whiteSpace='pre-wrap';bub.textContent=text;bw.appendChild(bub);if(role==='bot'){const av=document.createElement('div');av.className='bot-mini-avatar';av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;div.appendChild(av);}div.appendChild(bw);wrap.appendChild(div);wrap.scrollTop=wrap.scrollHeight;return bub;}
 
-function showTyping(cb){
-  const wrap=document.getElementById('botMessages');
-  const div=document.createElement('div');
-  div.className='bot-msg bot';div.id='botTypingRow';
-  const av=document.createElement('div');av.className='bot-mini-avatar';
-  av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;
-  const bw=document.createElement('div');bw.className='bot-bubble-wrap';
-  const bub=document.createElement('div');bub.className='bot-bubble';bub.style.padding='0';
-  const ty=document.createElement('div');ty.className='bot-typing';
-  ty.innerHTML='<span></span><span></span><span></span>';
-  bub.appendChild(ty);bw.appendChild(bub);div.appendChild(av);div.appendChild(bw);
-  wrap.appendChild(div);wrap.scrollTop=wrap.scrollHeight;
-  isTyping=true;
-  setInputEnabled(false);
-  setTimeout(()=>{
-    const el=document.getElementById('botTypingRow');
-    if(el)el.remove();
-    isTyping=false;
-    cb();
-  },900+Math.random()*500);
-}
+function showTyping(cb){const wrap=document.getElementById('botMessages');const div=document.createElement('div');div.className='bot-msg bot';div.id='botTypingRow';const av=document.createElement('div');av.className='bot-mini-avatar';av.innerHTML=`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M2 12c2-6 16-6 20 0M2 12c2 6 16 6 20 0" stroke-linecap="round"/></svg>`;const bw=document.createElement('div');bw.className='bot-bubble-wrap';const bub=document.createElement('div');bub.className='bot-bubble';bub.style.padding='0';const ty=document.createElement('div');ty.className='bot-typing';ty.innerHTML='<span></span><span></span><span></span>';bub.appendChild(ty);bw.appendChild(bub);div.appendChild(av);div.appendChild(bw);wrap.appendChild(div);wrap.scrollTop=wrap.scrollHeight;isTyping=true;setInputEnabled(false);setTimeout(()=>{const el=document.getElementById('botTypingRow');if(el)el.remove();isTyping=false;cb();},900+Math.random()*500);}
 
-function setChips(chips){
-  const cc=document.getElementById('botChips');
-  cc.innerHTML='';
-  if(!chips||chips.length===0)return;
-  chips.forEach(c=>{
-    const btn=document.createElement('button');
-    btn.className='bot-chip';btn.textContent=c;
-    btn.onclick=()=>{
-      addMsg(c,'user');
-      collectAndAdvance(c);
-      setChips([]);
-    };
-    cc.appendChild(btn);
-  });
-}
+function setChips(chips){const cc=document.getElementById('botChips');cc.innerHTML='';if(!chips||chips.length===0)return;chips.forEach(c=>{const btn=document.createElement('button');btn.className='bot-chip';btn.textContent=c;btn.onclick=()=>{addMsg(c,'user');collectAndAdvance(c);setChips([]);};cc.appendChild(btn);});}
 
-function setInputEnabled(enabled){
-  const inp=document.getElementById('botInput');
-  const snd=document.getElementById('botSend');
-  inp.disabled=!enabled;snd.disabled=!enabled;
-  if(enabled)inp.focus();
-}
+function setInputEnabled(enabled){const inp=document.getElementById('botInput');const snd=document.getElementById('botSend');inp.disabled=!enabled;snd.disabled=!enabled;if(enabled)inp.focus();}
 
-function showStep(idx){
-  if(idx>=FLOW.length){submitLead();return;}
-  const step=FLOW[idx];
-  const msg=typeof step.bot==='function'?step.bot(botData):step.bot;
-  showTyping(()=>{
-    addMsg(msg,'bot');
-    if(step.type==='chips'){
-      setChips(step.chips);
-      setInputEnabled(false);
-    } else {
-      setInputEnabled(true);
-      const inp=document.getElementById('botInput');
-      inp.placeholder=step.placeholder||'Type here…';
-    }
-  });
-}
+function showStep(idx){if(idx>=FLOW.length){submitLead();return;}const step=FLOW[idx];const msg=typeof step.bot==='function'?step.bot(botData):step.bot;showTyping(()=>{addMsg(msg,'bot');if(step.type==='chips'){setChips(step.chips);setInputEnabled(false);}else{setInputEnabled(true);const inp=document.getElementById('botInput');inp.placeholder=step.placeholder||'Type here…';}});}
 
-function collectAndAdvance(val){
-  const step=FLOW[currentStep];
-  if(step.validate){
-    const err=step.validate(val);
-    if(typeof err==='string'){
-      showTyping(()=>addMsg(err,'bot'));
-      setInputEnabled(true);
-      return;
-    }
-  }
-  botData[step.key]=val;
-  currentStep++;
-  setTimeout(()=>showStep(currentStep),400);
-}
+function collectAndAdvance(val){const step=FLOW[currentStep];if(step.validate){const err=step.validate(val);if(typeof err==='string'){showTyping(()=>addMsg(err,'bot'));setInputEnabled(true);return;}}botData[step.key]=val;currentStep++;setTimeout(()=>showStep(currentStep),400);}
 
-function sendUserMsg(){
-  if(isTyping)return;
-  const inp=document.getElementById('botInput');
-  const val=inp.value.trim();
-  if(!val)return;
-  inp.value='';inp.style.height='auto';
-  addMsg(val,'user');
-  setInputEnabled(false);
-  collectAndAdvance(val);
-}
+function sendUserMsg(){if(isTyping)return;const inp=document.getElementById('botInput');const val=inp.value.trim();if(!val)return;inp.value='';inp.style.height='auto';addMsg(val,'user');setInputEnabled(false);collectAndAdvance(val);}
 
-async function submitLead(){
-  setChips([]);
-  setInputEnabled(false);
-  showTyping(async()=>{
-    addMsg("Thanks — I have everything I need! Let me send your details to the team now…",'bot');
-    const payload={
-      source:'Chatbot',
-      timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),
-      name:botData.name||'',
-      email:botData.email||'',
-      org:botData.org||'',
-      area:botData.area||'',
-      location:botData.location||'',
-      challenge:botData.challenge||'',
-      timeline:botData.timeline||''
-    };
-    try{
-      await fetch(APPS_SCRIPT_URL,{
-        method:'POST',mode:'no-cors',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(payload)
-      });
-    }catch(e){}
+async function submitLead(){setChips([]);setInputEnabled(false);showTyping(async()=>{addMsg("Thanks — I have everything I need! Let me send your details to the team now…",'bot');const payload={source:'Chatbot',timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),name:botData.name||'',email:botData.email||'',org:botData.org||'',area:botData.area||'',location:botData.location||'',challenge:botData.challenge||'',timeline:botData.timeline||''};try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});}catch(e){}setTimeout(()=>{const wrap=document.getElementById('botMessages');const row=document.getElementById('botInputRow');if(row)row.style.display='none';const suc=document.createElement('div');suc.className='bot-success';suc.innerHTML=`<div class="bot-success-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="bot-success-title">Enquiry sent!</div><div class="bot-success-sub">We've forwarded your details to <strong style="color:var(--teal);">support@click2seek.in</strong>.<br>Someone from the team will be in touch within <strong>48 hours</strong>.</div><button onclick="restartBot()" style="margin-top:16px;padding:9px 20px;background:var(--teal-light);color:var(--teal);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;">Start a new enquiry</button>`;wrap.appendChild(suc);wrap.scrollTop=wrap.scrollHeight;},800);});}
 
-    setTimeout(()=>{
-      const wrap=document.getElementById('botMessages');
-      const row=document.getElementById('botInputRow');
-      if(row)row.style.display='none';
+function restartBot(){botData={};currentStep=0;document.getElementById('botMessages').innerHTML='';setChips([]);const row=document.getElementById('botInputRow');if(row)row.style.display='flex';setTimeout(()=>showStep(0),200);}
 
-      const suc=document.createElement('div');
-      suc.className='bot-success';
-      suc.innerHTML=`
-        <div class="bot-success-icon">
-          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="bot-success-title">Enquiry sent!</div>
-        <div class="bot-success-sub">We've forwarded your details to <strong style="color:var(--teal);">support@click2seek.in</strong>.<br>Someone from the team will be in touch within <strong>48 hours</strong>.</div>
-        <button onclick="restartBot()" style="margin-top:16px;padding:9px 20px;background:var(--teal-light);color:var(--teal);border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;">Start a new enquiry</button>
-      `;
-      wrap.appendChild(suc);
-      wrap.scrollTop=wrap.scrollHeight;
-    },800);
-  });
-}
-
-function restartBot(){
-  botData={};currentStep=0;
-  document.getElementById('botMessages').innerHTML='';
-  setChips([]);
-  const row=document.getElementById('botInputRow');
-  if(row)row.style.display='flex';
-  setTimeout(()=>showStep(0),200);
-}
-
-/* ════════════════════════════════════════
-   MARQUEE
-════════════════════════════════════════ */
+/* MARQUEE */
 const items=['Computer Vision','Marine Biology AI','Wildlife Monitoring','Camera Trap Intelligence','Underwater Species ID','Drone Survey AI','Ethology Analysis','Bioacoustic Detection','Edge AI Systems','Biodiversity Analytics','Conservation Technology','Ecological Research'];
 const track=document.getElementById('marquee');
 const sep='<span style="display:inline-block;width:2px;height:10px;background:rgba(255,255,255,0.25);margin:0 24px;vertical-align:middle;"></span>';
 const inner=items.map(t=>`<span style="white-space:nowrap;font-size:13px;font-weight:600;letter-spacing:.5px;color:rgba(255,255,255,0.85);padding:0 24px;">${t}${sep}</span>`).join('');
 track.innerHTML=inner+inner;
 
-/* ════════════════════════════════════════
-   HERO CANVAS
-════════════════════════════════════════ */
-(function(){
-  const c=document.getElementById('heroCanvas');if(!c)return;
-  const ctx=c.getContext('2d');
-  let W,H,fish=[],particles=[];
-  function resize(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}
-  resize();window.addEventListener('resize',resize);
-  function makeFish(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*.6,size:6+Math.random()*14,col:['#5DCAA5','#85B7EB','#C8A96E','#7ed9c8','#fff'][Math.floor(Math.random()*5)],t:Math.random()*100};}
-  for(let i=0;i<28;i++)fish.push(makeFish());
-  for(let i=0;i<60;i++)particles.push({x:Math.random()*500,y:Math.random()*700,r:.5+Math.random()*1.5,vy:-.2-Math.random()*.5,a:Math.random()});
-  let bboxes=[{x:.35,y:.2,w:.25,h:.15,lbl:'Sardinella longiceps',conf:94,col:'#5DCAA5'},{x:.1,y:.5,w:.2,h:.2,lbl:'Lutjanus argentimaculatus',conf:87,col:'#85B7EB'},{x:.65,y:.55,w:.18,h:.12,lbl:'Thunnus albacares',conf:91,col:'#C8A96E'}];
-  let t=0;
-  function draw(){
-    ctx.clearRect(0,0,W,H);ctx.fillStyle='rgba(11,61,92,0.97)';ctx.fillRect(0,0,W,H);
-    ctx.globalAlpha=.06;
-    for(let i=0;i<6;i++){const cx=W*(.1+i*.15),cy=H*(.2+Math.sin(t*.008+i)*.15);const g=ctx.createRadialGradient(cx,cy,10,cx,cy,120);g.addColorStop(0,'rgba(26,148,133,0.6)');g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,120,0,Math.PI*2);ctx.fill();}
-    ctx.globalAlpha=1;
-    particles.forEach(p=>{p.y+=p.vy;if(p.y<0)p.y=H;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${.1+p.a*.15})`;ctx.fill();});
-    fish.forEach(f=>{
-      f.x+=f.vx;f.y+=f.vy;f.t+=.04;f.y+=Math.sin(f.t)*.3;
-      if(f.x<-40)f.x=W+20;if(f.x>W+40)f.x=-20;if(f.y<0)f.y=H;if(f.y>H)f.y=0;
-      const dir=f.vx>0?1:-1;ctx.save();ctx.translate(f.x,f.y);ctx.scale(dir,1);ctx.globalAlpha=.8;
-      ctx.beginPath();ctx.ellipse(0,0,f.size,f.size*.45,0,0,Math.PI*2);ctx.fillStyle=f.col;ctx.fill();
-      ctx.beginPath();ctx.moveTo(-f.size*.7,0);ctx.lineTo(-f.size*1.2,-f.size*.4);ctx.lineTo(-f.size*1.2,f.size*.4);ctx.closePath();ctx.fillStyle=f.col;ctx.fill();
-      ctx.globalAlpha=1;ctx.restore();
-    });
-    bboxes.forEach((b,i)=>{
-      const phase=Math.sin(t*.015+i*2.1);const a=.6+phase*.2;ctx.globalAlpha=a;
-      ctx.strokeStyle=b.col;ctx.lineWidth=1.5;ctx.setLineDash([6,3]);ctx.strokeRect(b.x*W,b.y*H,b.w*W,b.h*H);ctx.setLineDash([]);
-      const bx=b.x*W,by=b.y*H,bw=b.w*W,bh=b.h*H,l=10;ctx.lineWidth=2.5;
-      [[bx,by,bx+l,by,bx,by+l],[bx+bw,by,bx+bw-l,by,bx+bw,by+l],[bx,by+bh,bx+l,by+bh,bx,by+bh-l],[bx+bw,by+bh,bx+bw-l,by+bh,bx+bw,by+bh-l]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.moveTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});
-      ctx.globalAlpha=a*.9;ctx.fillStyle=b.col;ctx.fillRect(b.x*W,b.y*H-22,(b.lbl.length*6.2+50),20);ctx.fillStyle='#030a12';ctx.font='bold 9px DM Mono,monospace';ctx.fillText(`${b.lbl} ${b.conf}%`,b.x*W+6,(b.y*H-6));ctx.globalAlpha=1;
-    });
-    const sl=(t%H);ctx.globalAlpha=.06;ctx.fillStyle='#1A9485';ctx.fillRect(0,sl,W,2);ctx.globalAlpha=1;
-    t++;requestAnimationFrame(draw);
-  }draw();
-})();
+/* HERO CANVAS */
+(function(){const c=document.getElementById('heroCanvas');if(!c)return;const ctx=c.getContext('2d');let W,H,fish=[],particles=[];function resize(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}resize();window.addEventListener('resize',resize);function makeFish(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*.6,size:6+Math.random()*14,col:['#5DCAA5','#85B7EB','#C8A96E','#7ed9c8','#fff'][Math.floor(Math.random()*5)],t:Math.random()*100};}for(let i=0;i<28;i++)fish.push(makeFish());for(let i=0;i<60;i++)particles.push({x:Math.random()*500,y:Math.random()*700,r:.5+Math.random()*1.5,vy:-.2-Math.random()*.5,a:Math.random()});let bboxes=[{x:.35,y:.2,w:.25,h:.15,lbl:'Sardinella longiceps',conf:94,col:'#5DCAA5'},{x:.1,y:.5,w:.2,h:.2,lbl:'Lutjanus argentimaculatus',conf:87,col:'#85B7EB'},{x:.65,y:.55,w:.18,h:.12,lbl:'Thunnus albacares',conf:91,col:'#C8A96E'}];let t=0;function draw(){ctx.clearRect(0,0,W,H);ctx.fillStyle='rgba(11,61,92,0.97)';ctx.fillRect(0,0,W,H);ctx.globalAlpha=.06;for(let i=0;i<6;i++){const cx=W*(.1+i*.15),cy=H*(.2+Math.sin(t*.008+i)*.15);const g=ctx.createRadialGradient(cx,cy,10,cx,cy,120);g.addColorStop(0,'rgba(26,148,133,0.6)');g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,120,0,Math.PI*2);ctx.fill();}ctx.globalAlpha=1;particles.forEach(p=>{p.y+=p.vy;if(p.y<0)p.y=H;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${.1+p.a*.15})`;ctx.fill();});fish.forEach(f=>{f.x+=f.vx;f.y+=f.vy;f.t+=.04;f.y+=Math.sin(f.t)*.3;if(f.x<-40)f.x=W+20;if(f.x>W+40)f.x=-20;if(f.y<0)f.y=H;if(f.y>H)f.y=0;const dir=f.vx>0?1:-1;ctx.save();ctx.translate(f.x,f.y);ctx.scale(dir,1);ctx.globalAlpha=.8;ctx.beginPath();ctx.ellipse(0,0,f.size,f.size*.45,0,0,Math.PI*2);ctx.fillStyle=f.col;ctx.fill();ctx.beginPath();ctx.moveTo(-f.size*.7,0);ctx.lineTo(-f.size*1.2,-f.size*.4);ctx.lineTo(-f.size*1.2,f.size*.4);ctx.closePath();ctx.fillStyle=f.col;ctx.fill();ctx.globalAlpha=1;ctx.restore();});bboxes.forEach((b,i)=>{const phase=Math.sin(t*.015+i*2.1);const a=.6+phase*.2;ctx.globalAlpha=a;ctx.strokeStyle=b.col;ctx.lineWidth=1.5;ctx.setLineDash([6,3]);ctx.strokeRect(b.x*W,b.y*H,b.w*W,b.h*H);ctx.setLineDash([]);const bx=b.x*W,by=b.y*H,bw=b.w*W,bh=b.h*H,l=10;ctx.lineWidth=2.5;[[bx,by,bx+l,by,bx,by+l],[bx+bw,by,bx+bw-l,by,bx+bw,by+l],[bx,by+bh,bx+l,by+bh,bx,by+bh-l],[bx+bw,by+bh,bx+bw-l,by+bh,bx+bw,by+bh-l]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.moveTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});ctx.globalAlpha=a*.9;ctx.fillStyle=b.col;ctx.fillRect(b.x*W,b.y*H-22,(b.lbl.length*6.2+50),20);ctx.fillStyle='#030a12';ctx.font='bold 9px DM Mono,monospace';ctx.fillText(`${b.lbl} ${b.conf}%`,b.x*W+6,(b.y*H-6));ctx.globalAlpha=1;});const sl=(t%H);ctx.globalAlpha=.06;ctx.fillStyle='#1A9485';ctx.fillRect(0,sl,W,2);ctx.globalAlpha=1;t++;requestAnimationFrame(draw);}draw();})();
 
-/* ════════════════════════════════════════
-   PRODUCT CARD CANVASES
-════════════════════════════════════════ */
+/* PRODUCT CANVASES */
 function drawUnderwaterSonar(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();window.addEventListener('resize',resize);const dots=Array.from({length:25},()=>({r:10+Math.random()*60,a:Math.random()*Math.PI*2,v:.01+Math.random()*.02,size:2+Math.random()*3}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);const cx=W/2,cy=H/2;for(let i=1;i<=5;i++){ctx.beginPath();ctx.arc(cx,cy,i*18,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.08+i*.02})`;ctx.lineWidth=.8;ctx.stroke();}ctx.save();ctx.translate(cx,cy);ctx.rotate(t*.03);ctx.beginPath();ctx.moveTo(0,0);ctx.arc(0,0,90,.0,1.2,false);ctx.lineTo(0,0);ctx.fillStyle='rgba(26,148,133,0.08)';ctx.fill();ctx.restore();ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(t*.03)*90,cy+Math.sin(t*.03)*90);ctx.strokeStyle='rgba(26,148,133,0.6)';ctx.lineWidth=1.5;ctx.stroke();dots.forEach(d=>{d.a+=d.v*.04;const x=cx+Math.cos(d.a)*d.r,y=cy+Math.sin(d.a)*d.r;ctx.beginPath();ctx.arc(x,y,d.size,0,Math.PI*2);ctx.fillStyle='rgba(93,202,165,.7)';ctx.fill();});t++;requestAnimationFrame(draw);}draw();}
 function drawForestGrid(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const trees=Array.from({length:20},()=>({x:Math.random(),y:Math.random(),s:.4+Math.random()*.6}));const animals=[{x:.2,y:.6,label:'Tiger',col:'#EF9F27'},{x:.7,y:.4,label:'Elephant',col:'#888780'},{x:.5,y:.75,label:'Deer',col:'#C8A96E'}];function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);trees.forEach(tr=>{const x=tr.x*W,y=tr.y*H,s=tr.s;ctx.fillStyle='rgba(45,90,39,0.3)';ctx.beginPath();ctx.arc(x,y,18*s,0,Math.PI*2);ctx.fill();ctx.fillStyle='rgba(45,90,39,0.15)';ctx.beginPath();ctx.arc(x,y,28*s,0,Math.PI*2);ctx.fill();});const scan=(t%H);ctx.globalAlpha=.04;ctx.fillStyle='#7bed9f';ctx.fillRect(0,scan,W,3);ctx.globalAlpha=1;animals.forEach(a=>{const x=a.x*W,y=a.y*H,p=.5+.5*Math.sin(t*.04+a.x*10);ctx.strokeStyle=a.col;ctx.lineWidth=1.5;ctx.globalAlpha=.7+p*.15;const bw=50,bh=32;ctx.strokeRect(x-bw/2,y-bh/2,bw,bh);[[x-bw/2,y-bh/2,x-bw/2+8,y-bh/2,x-bw/2,y-bh/2+8],[x+bw/2,y-bh/2,x+bw/2-8,y-bh/2,x+bw/2,y-bh/2+8],[x-bw/2,y+bh/2,x-bw/2+8,y+bh/2,x-bw/2,y+bh/2-8],[x+bw/2,y+bh/2,x+bw/2-8,y+bh/2,x+bw/2,y+bh/2-8]].forEach(([x1,y1,x2,y2,x3,y3])=>{ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x1,y1);ctx.lineTo(x3,y3);ctx.stroke();});ctx.globalAlpha=.9;ctx.fillStyle=a.col;ctx.fillRect(x-bw/2,y-bh/2-16,a.label.length*6+8,14);ctx.fillStyle='#030a12';ctx.font='bold 8px DM Mono,monospace';ctx.fillText(a.label,x-bw/2+4,y-bh/2-5);ctx.globalAlpha=1;});t++;requestAnimationFrame(draw);}draw();}
 function drawDroneHeatmap(id){const c=document.getElementById(id);if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();const clusters=Array.from({length:6},()=>({x:Math.random(),y:Math.random(),r:20+Math.random()*30,a:Math.random()*Math.PI*2,v:.005+Math.random()*.01,n:2+Math.floor(Math.random()*12)}));function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);clusters.forEach(cl=>{cl.x+=Math.sin(t*.02+cl.a)*0.001;cl.y+=Math.cos(t*.02+cl.a)*0.001;if(cl.x<0.05||cl.x>0.95)cl.a+=Math.PI;if(cl.y<0.05||cl.y>0.95)cl.a+=Math.PI;const x=cl.x*W,y=cl.y*H;const g=ctx.createRadialGradient(x,y,2,x,y,cl.r);const intensity=cl.n/14;g.addColorStop(0,`rgba(${Math.floor(intensity*220+35)},${Math.floor((1-intensity)*180+20)},0,0.35)`);g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,cl.r,0,Math.PI*2);ctx.fill();});for(let gx=0;gx<c.width;gx+=30){ctx.beginPath();ctx.moveTo(gx,0);ctx.lineTo(gx,c.height);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}for(let gy=0;gy<c.height;gy+=30){ctx.beginPath();ctx.moveTo(0,gy);ctx.lineTo(c.width,gy);ctx.strokeStyle='rgba(255,255,255,0.04)';ctx.lineWidth=.5;ctx.stroke();}const dx=c.width/2+Math.sin(t*.02)*c.width*.15,dy=c.height/2+Math.cos(t*.03)*c.height*.1;ctx.strokeStyle='rgba(255,255,255,0.7)';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(dx-12,dy);ctx.lineTo(dx+12,dy);ctx.moveTo(dx,dy-12);ctx.lineTo(dx,dy+12);ctx.stroke();ctx.beginPath();ctx.arc(dx,dy,18,0,Math.PI*2);ctx.strokeStyle='rgba(255,255,255,0.3)';ctx.lineWidth=1;ctx.stroke();t++;requestAnimationFrame(draw);}draw();}
@@ -978,64 +909,16 @@ function drawDashboard(id){const c=document.getElementById(id);if(!c)return;cons
 drawUnderwaterSonar('p1canvas');drawForestGrid('p2canvas');drawDroneHeatmap('p3canvas');
 drawBehaviourPlot('p4canvas');drawAcoustic('p5canvas');drawDashboard('p6canvas');
 
-/* ════════════════════════════════════════
-   PIPELINE CANVAS
-════════════════════════════════════════ */
-(function(){
-  const c=document.getElementById('pipelineCanvas');if(!c)return;
-  const ctx=c.getContext('2d');
-  function resize(){c.width=c.offsetWidth;c.height=200;}resize();
-  window.addEventListener('resize',resize);
-  const stages=['Capture','Preprocess','Inference','Score','BiomeCloud'];
-  const cols=['#1A9485','#0E6E62','#0B3D5C','#2D5A27','#C8A96E'];
-  let pkts=[],t=0;
-  setInterval(()=>{pkts.push({s:0,t:0});},800);
-  function draw(){
-    const W=c.width,H=c.height=200;ctx.clearRect(0,0,W,H);
-    const sw=W/stages.length;
-    stages.forEach((s,i)=>{
-      const cx=i*sw+sw/2,cy=H/2;
-      ctx.beginPath();ctx.arc(cx,cy,24,0,Math.PI*2);ctx.fillStyle=cols[i]+'22';ctx.strokeStyle=cols[i];ctx.lineWidth=1.5;ctx.fill();ctx.stroke();
-      ctx.fillStyle=cols[i];ctx.font='bold 9px DM Mono,monospace';ctx.textAlign='center';ctx.fillText(s,cx,cy+4);ctx.textAlign='left';
-      if(i<stages.length-1){ctx.beginPath();ctx.moveTo(cx+26,cy);ctx.lineTo((i+1)*sw+sw/2-26,cy);ctx.strokeStyle='rgba(26,148,133,0.25)';ctx.lineWidth=1;ctx.setLineDash([4,4]);ctx.stroke();ctx.setLineDash([]);}
-    });
-    pkts=pkts.filter(p=>p.s<stages.length-1);
-    pkts.forEach(p=>{p.t+=0.025;if(p.t>=1){p.s=Math.min(p.s+1,stages.length-2);p.t=0;}const x1=p.s*sw+sw/2+26,x2=(p.s+1)*sw+sw/2-26;const x=x1+(x2-x1)*p.t,y=H/2;const a=Math.sin(p.t*Math.PI);ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle=cols[p.s];ctx.globalAlpha=a;ctx.fill();ctx.globalAlpha=1;});
-    t++;requestAnimationFrame(draw);
-  }draw();
-})();
+/* PIPELINE CANVAS */
+(function(){const c=document.getElementById('pipelineCanvas');if(!c)return;const ctx=c.getContext('2d');function resize(){c.width=c.offsetWidth;c.height=200;}resize();window.addEventListener('resize',resize);const stages=['Capture','Preprocess','Inference','Score','BiomeCloud'];const cols=['#1A9485','#0E6E62','#0B3D5C','#2D5A27','#C8A96E'];let pkts=[],t=0;setInterval(()=>{pkts.push({s:0,t:0});},800);function draw(){const W=c.width,H=c.height=200;ctx.clearRect(0,0,W,H);const sw=W/stages.length;stages.forEach((s,i)=>{const cx=i*sw+sw/2,cy=H/2;ctx.beginPath();ctx.arc(cx,cy,24,0,Math.PI*2);ctx.fillStyle=cols[i]+'22';ctx.strokeStyle=cols[i];ctx.lineWidth=1.5;ctx.fill();ctx.stroke();ctx.fillStyle=cols[i];ctx.font='bold 9px DM Mono,monospace';ctx.textAlign='center';ctx.fillText(s,cx,cy+4);ctx.textAlign='left';if(i<stages.length-1){ctx.beginPath();ctx.moveTo(cx+26,cy);ctx.lineTo((i+1)*sw+sw/2-26,cy);ctx.strokeStyle='rgba(26,148,133,0.25)';ctx.lineWidth=1;ctx.setLineDash([4,4]);ctx.stroke();ctx.setLineDash([]);}});pkts=pkts.filter(p=>p.s<stages.length-1);pkts.forEach(p=>{p.t+=0.025;if(p.t>=1){p.s=Math.min(p.s+1,stages.length-2);p.t=0;}const x1=p.s*sw+sw/2+26,x2=(p.s+1)*sw+sw/2-26;const x=x1+(x2-x1)*p.t,y=H/2;const a=Math.sin(p.t*Math.PI);ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fillStyle=cols[p.s];ctx.globalAlpha=a;ctx.fill();ctx.globalAlpha=1;});t++;requestAnimationFrame(draw);}draw();})();
 
-/* ════════════════════════════════════════
-   ABOUT CANVAS
-════════════════════════════════════════ */
-(function(){
-  const c=document.getElementById('aboutCanvas');if(!c)return;
-  const ctx=c.getContext('2d');let t=0;
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();
-  window.addEventListener('resize',resize);
-  function draw(){
-    const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);
-    for(let i=1;i<=4;i++){ctx.save();ctx.translate(W/2,H/2);ctx.rotate(t*.005*i);ctx.beginPath();ctx.ellipse(0,0,W*.3*i/4,H*.25*i/4,0,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.04+i*.02})`;ctx.lineWidth=1;ctx.stroke();ctx.restore();}
-    for(let i=0;i<20;i++){const a=i/20*Math.PI*2+t*.01,r=W*.3;const x=W/2+Math.cos(a)*r,y=H/2+Math.sin(a)*r*.6;ctx.beginPath();ctx.arc(x,y,1.5,0,Math.PI*2);ctx.fillStyle='rgba(26,148,133,0.5)';ctx.fill();}
-    t++;requestAnimationFrame(draw);
-  }draw();
-})();
+/* ABOUT CANVAS */
+(function(){const c=document.getElementById('aboutCanvas');if(!c)return;const ctx=c.getContext('2d');let t=0;function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}resize();window.addEventListener('resize',resize);function draw(){const W=c.width,H=c.height;ctx.clearRect(0,0,W,H);for(let i=1;i<=4;i++){ctx.save();ctx.translate(W/2,H/2);ctx.rotate(t*.005*i);ctx.beginPath();ctx.ellipse(0,0,W*.3*i/4,H*.25*i/4,0,0,Math.PI*2);ctx.strokeStyle=`rgba(26,148,133,${.04+i*.02})`;ctx.lineWidth=1;ctx.stroke();ctx.restore();}for(let i=0;i<20;i++){const a=i/20*Math.PI*2+t*.01,r=W*.3;const x=W/2+Math.cos(a)*r,y=H/2+Math.sin(a)*r*.6;ctx.beginPath();ctx.arc(x,y,1.5,0,Math.PI*2);ctx.fillStyle='rgba(26,148,133,0.5)';ctx.fill();}t++;requestAnimationFrame(draw);}draw();})();
 
-/* ════════════════════════════════════════
-   CONTACT FORM
-════════════════════════════════════════ */
-async function handleContact(){
-  const s=document.getElementById('cstatus');
-  const f={name:document.getElementById('fname').value+' '+document.getElementById('lname').value,email:document.getElementById('cemail').value,org:document.getElementById('org').value,interest:document.getElementById('interest').value,msg:document.getElementById('msg').value};
-  if(!f.email||!f.name.trim()){s.style.cssText='display:block;background:#fdf0ee;color:#993c1d;border:1px solid #f0997b;border-radius:8px;';s.textContent='Please fill in your name and email.';return;}
-  s.style.cssText='display:block;background:#e1f5ee;color:#0f6e56;border:1px solid #5dcaa5;border-radius:8px;';s.textContent='Sending your enquiry...';
-  try{await fetch('https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:'Contact Form',timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),...f})});}catch(e){}
-  s.textContent="✓ Enquiry sent! We'll be in touch at "+f.email+" within 48 hours.";
-}
+/* CONTACT FORM */
+async function handleContact(){const s=document.getElementById('cstatus');const f={name:document.getElementById('fname').value+' '+document.getElementById('lname').value,email:document.getElementById('cemail').value,org:document.getElementById('org').value,interest:document.getElementById('interest').value,msg:document.getElementById('msg').value};if(!f.email||!f.name.trim()){s.style.cssText='display:block;background:#fdf0ee;color:#993c1d;border:1px solid #f0997b;border-radius:8px;';s.textContent='Please fill in your name and email.';return;}s.style.cssText='display:block;background:#e1f5ee;color:#0f6e56;border:1px solid #5dcaa5;border-radius:8px;';s.textContent='Sending your enquiry...';try{await fetch('https://script.google.com/macros/s/AKfycbxJh4dpC_bwlBVTxtPW76IWRcT2aVyw8CU6q8Mx5xNhrrxAZhAoASFFwQh4akgQMtjg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:'Contact Form',timestamp:new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}),...f})});}catch(e){}s.textContent="✓ Enquiry sent! We'll be in touch at "+f.email+" within 48 hours.";}
 
-/* ════════════════════════════════════════
-   REVEAL ON SCROLL
-════════════════════════════════════════ */
+/* REVEAL ON SCROLL */
 const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 </script>
